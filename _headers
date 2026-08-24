@@ -1,0 +1,47 @@
+# Netlify header rules for studioaria.net
+#
+# Fixes the "admin page shows outdated information on one device but not
+# another" problem. Netlify's default behaviour lets browsers hold on to a
+# cached copy of a page, so two devices can end up rendering different
+# versions of the same page from different points in time.
+#
+# Place this file at the ROOT of the folder that gets deployed to Netlify
+# (the same folder that contains whonknows-xke99.html). It has no file
+# extension. Netlify reads it at deploy time; nothing needs to be installed.
+
+# Default for every page: the browser may keep a copy, but must check with
+# the server before reusing it. Pages stay fast without ever going stale.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# The admin page is stricter: never store it at all.
+#
+# This page decides whether a gift card still has value. A cached copy could
+# show a balance for a card that has already been redeemed, which would let
+# the same card be honoured twice. It must always come from the network.
+#
+# X-Robots-Tag keeps the page out of search results. The page is protected
+# partly by having an address nobody would guess, and that protection is lost
+# the moment a crawler indexes it. Note this is deliberately NOT handled in
+# robots.txt, because a robots.txt entry would publish the very path we are
+# trying to keep quiet.
+/whonknows-xke99.html
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+  Pragma: no-cache
+  Expires: 0
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+
+# Fingerprinted build assets (filenames containing a content hash) can be
+# cached indefinitely, because a change to the file changes its name.
+# Harmless if these folders do not exist.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
