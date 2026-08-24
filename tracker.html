@@ -1,0 +1,1455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Not intended to be deployed. The noindex is a safety net in case this
+     file is ever uploaded with a site folder by accident. The page itself
+     contains no financial data - everything lives in the browser. -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Income &amp; Expense Tracker</title>
+<style>
+:root {
+  --bg: #f5f3f0;
+  --surface: #ffffff;
+  --surface-2: #faf8f6;
+  --line: #e3ded8;
+  --line-strong: #cec6bc;
+  --text: #221f1c;
+  --text-dim: #6b635b;
+  --text-faint: #968d83;
+  --accent: #6f5540;
+  --accent-text: #ffffff;
+  --accent-soft: #efe7de;
+  --income: #256b4e;
+  --income-bar: #3f9670;
+  --income-soft: #e2efe9;
+  --expense: #9a3f2b;
+  --expense-bar: #c4664e;
+  --expense-soft: #f7e5e0;
+  --danger: #9a3f2b;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(34,31,28,.05), 0 3px 12px rgba(34,31,28,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171513;
+    --surface: #211e1b;
+    --surface-2: #1b1917;
+    --line: #35302b;
+    --line-strong: #4a433c;
+    --text: #ece7e1;
+    --text-dim: #a89e93;
+    --text-faint: #7d746a;
+    --accent: #c9a888;
+    --accent-text: #241f19;
+    --accent-soft: #33291f;
+    --income: #6cc79b;
+    --income-bar: #3f9670;
+    --income-soft: #1d302a;
+    --expense: #e0917a;
+    --expense-bar: #c4664e;
+    --expense-soft: #33211c;
+    --danger: #e0917a;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 3px 12px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171513;
+  --surface: #211e1b;
+  --surface-2: #1b1917;
+  --line: #35302b;
+  --line-strong: #4a433c;
+  --text: #ece7e1;
+  --text-dim: #a89e93;
+  --text-faint: #7d746a;
+  --accent: #c9a888;
+  --accent-text: #241f19;
+  --accent-soft: #33291f;
+  --income: #6cc79b;
+  --income-bar: #3f9670;
+  --income-soft: #1d302a;
+  --expense: #e0917a;
+  --expense-bar: #c4664e;
+  --expense-soft: #33211c;
+  --danger: #e0917a;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 3px 12px rgba(0,0,0,.25);
+}
+
+* { box-sizing: border-box; }
+/* A display rule on an element beats the browser's own [hidden] rule,
+   which would leave an empty toast painted on the page. */
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 20px 16px 64px; }
+
+/* ---------- header ---------- */
+.top { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; justify-content: space-between; margin-bottom: 20px; }
+.brand h1 { margin: 0; font-size: 1.35rem; letter-spacing: -.01em; }
+.brand p { margin: 2px 0 0; color: var(--text-dim); font-size: .875rem; }
+.brand h1 span[contenteditable] { outline: none; border-bottom: 1px dashed transparent; }
+.brand h1 span[contenteditable]:hover { border-bottom-color: var(--line-strong); }
+.brand h1 span[contenteditable]:focus { border-bottom-color: var(--accent); }
+.top-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* ---------- controls ---------- */
+button, .btn {
+  font: inherit; font-size: .875rem; cursor: pointer;
+  border: 1px solid var(--line-strong); background: var(--surface); color: var(--text);
+  padding: 7px 13px; border-radius: 8px; line-height: 1.3;
+}
+button:hover, .btn:hover { background: var(--surface-2); border-color: var(--text-faint); }
+button:focus-visible, .btn:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 1px;
+}
+button.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); font-weight: 600; }
+button.primary:hover { filter: brightness(1.08); background: var(--accent); }
+button.ghost { border-color: transparent; background: transparent; color: var(--text-dim); }
+button.ghost:hover { background: var(--accent-soft); color: var(--text); }
+button.danger { color: var(--danger); }
+button:disabled { opacity: .45; cursor: not-allowed; }
+
+input, select, textarea {
+  font: inherit; font-size: .9375rem; width: 100%;
+  padding: 8px 10px; border-radius: 8px;
+  border: 1px solid var(--line-strong); background: var(--surface); color: var(--text);
+}
+input::placeholder, textarea::placeholder { color: var(--text-faint); }
+label { display: block; font-size: .75rem; font-weight: 600; text-transform: uppercase;
+        letter-spacing: .04em; color: var(--text-dim); margin-bottom: 4px; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+        box-shadow: var(--shadow); padding: 18px; margin-bottom: 18px; }
+.card > h2 { margin: 0 0 14px; font-size: .9375rem; letter-spacing: .01em; }
+.card-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.card-head h2 { margin: 0; font-size: .9375rem; }
+
+/* ---------- entry form ---------- */
+#entry-form.editing { border-color: var(--accent); }
+.type-toggle { display: flex; gap: 0; border: 1px solid var(--line-strong); border-radius: 8px; overflow: hidden; }
+.type-toggle input { position: absolute; opacity: 0; pointer-events: none; width: 0; }
+.type-toggle label {
+  flex: 1; margin: 0; text-align: center; padding: 9px 8px; cursor: pointer;
+  font-size: .8125rem; text-transform: none; letter-spacing: 0; font-weight: 600;
+  color: var(--text-dim); background: var(--surface);
+}
+.type-toggle label:first-of-type { border-right: 1px solid var(--line-strong); }
+.type-toggle input:checked + label { color: #fff; }
+.type-toggle input#t-income:checked + label { background: var(--income-bar); }
+.type-toggle input#t-expense:checked + label { background: var(--expense-bar); }
+.type-toggle input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.form-grid { display: grid; gap: 12px; grid-template-columns: repeat(12, 1fr); }
+.f-type { grid-column: span 3; } .f-date { grid-column: span 3; }
+.f-amount { grid-column: span 3; } .f-method { grid-column: span 3; }
+.f-cat { grid-column: span 4; } .f-note { grid-column: span 8; }
+.form-foot { display: flex; gap: 8px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
+.form-foot .spacer { flex: 1; }
+.hint { font-size: .8125rem; color: var(--text-faint); }
+
+/* ---------- summary ---------- */
+.totals { display: grid; gap: 12px; grid-template-columns: repeat(4, 1fr); margin-bottom: 18px; }
+.total {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 16px; box-shadow: var(--shadow);
+}
+.total dt { margin: 0 0 4px; font-size: .6875rem; font-weight: 600; text-transform: uppercase;
+            letter-spacing: .05em; color: var(--text-dim); }
+.total dd { margin: 0; font-size: 1.5rem; font-weight: 650; letter-spacing: -.02em;
+            font-variant-numeric: tabular-nums; }
+.total .sub { font-size: .75rem; color: var(--text-faint); font-weight: 400; letter-spacing: 0; }
+.total.in dd { color: var(--income); }
+.total.ex dd { color: var(--expense); }
+.total.net.pos dd { color: var(--income); }
+.total.net.neg dd { color: var(--expense); }
+
+/* ---------- filters ---------- */
+.filters { display: grid; gap: 10px; grid-template-columns: repeat(12, 1fr); align-items: end; }
+.fl-period { grid-column: span 3; } .fl-from { grid-column: span 2; } .fl-to { grid-column: span 2; }
+.fl-type { grid-column: span 2; } .fl-search { grid-column: span 3; }
+.filters.custom-hidden .fl-from, .filters.custom-hidden .fl-to { display: none; }
+.filters.custom-hidden .fl-period { grid-column: span 4; }
+.filters.custom-hidden .fl-type { grid-column: span 3; }
+.filters.custom-hidden .fl-search { grid-column: span 5; }
+
+/* ---------- chart ---------- */
+.chart-legend { display: flex; gap: 14px; font-size: .75rem; color: var(--text-dim); }
+.chart-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.chart-scroll { overflow-x: auto; }
+svg.chart { display: block; min-width: 100%; }
+svg.chart text { font-size: 11px; fill: var(--text-faint); }
+svg.chart .grid { stroke: var(--line); stroke-width: 1; }
+svg.chart .zero { stroke: var(--line-strong); }
+
+/* ---------- category breakdown ---------- */
+.breakdowns { display: grid; gap: 18px; grid-template-columns: 1fr 1fr; }
+.bd h3 { margin: 0 0 10px; font-size: .8125rem; text-transform: uppercase;
+         letter-spacing: .05em; color: var(--text-dim); }
+.bd-row { margin-bottom: 10px; }
+.bd-line { display: flex; justify-content: space-between; gap: 10px; font-size: .875rem; margin-bottom: 4px; }
+.bd-line .amt { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bd-line .pct { color: var(--text-faint); font-size: .8125rem; }
+.bar { height: 6px; background: var(--surface-2); border-radius: 3px; overflow: hidden; border: 1px solid var(--line); }
+.bar i { display: block; height: 100%; }
+.bd.in .bar i { background: var(--income-bar); }
+.bd.ex .bar i { background: var(--expense-bar); }
+
+/* ---------- table ---------- */
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .9375rem; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: .6875rem; text-transform: uppercase; letter-spacing: .05em;
+     color: var(--text-dim); font-weight: 600; white-space: nowrap; }
+th.sortable { cursor: pointer; user-select: none; }
+th.sortable:hover { color: var(--text); }
+th .arrow { opacity: .5; font-size: .625rem; }
+tbody tr:hover { background: var(--surface-2); }
+td.amount { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
+td.amount.in { color: var(--income); }
+td.amount.ex { color: var(--expense); }
+td.date { white-space: nowrap; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+td.note { color: var(--text-dim); }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: .75rem;
+        background: var(--accent-soft); color: var(--text-dim); white-space: nowrap; }
+td.row-actions { text-align: right; white-space: nowrap; width: 1%; }
+td.row-actions button { padding: 4px 8px; font-size: .8125rem; }
+tfoot td { font-weight: 650; border-top: 2px solid var(--line-strong); border-bottom: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden;
+         clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.empty { text-align: center; padding: 34px 16px; color: var(--text-faint); font-size: .9375rem; }
+
+/* ---------- toast ---------- */
+#toast {
+  position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%) translateY(140%);
+  background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 8px;
+  font-size: .875rem; box-shadow: 0 6px 24px rgba(0,0,0,.22); z-index: 50;
+  display: flex; align-items: center; gap: 12px; transition: transform .22s ease; max-width: 92vw;
+}
+#toast.show { transform: translateX(-50%) translateY(0); }
+#toast button { background: transparent; border: 1px solid currentColor; color: inherit; padding: 3px 10px; font-size: .8125rem; }
+#toast button:hover { background: rgba(255,255,255,.14); }
+
+/* ---------- settings ---------- */
+dialog {
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface);
+  color: var(--text); padding: 0; max-width: 560px; width: calc(100vw - 32px); box-shadow: 0 12px 48px rgba(0,0,0,.25);
+}
+dialog::backdrop { background: rgba(20,17,15,.5); }
+.dlg-head { display: flex; justify-content: space-between; align-items: center;
+            padding: 16px 18px; border-bottom: 1px solid var(--line); }
+.dlg-head h2 { margin: 0; font-size: 1rem; }
+.dlg-body { padding: 18px; max-height: 65vh; overflow-y: auto; }
+.dlg-foot { padding: 14px 18px; border-top: 1px solid var(--line); display: flex; gap: 8px; justify-content: flex-end; }
+.field { margin-bottom: 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.chip { display: inline-flex; align-items: center; gap: 6px; background: var(--surface-2);
+        border: 1px solid var(--line); border-radius: 20px; padding: 3px 6px 3px 11px; font-size: .8125rem; }
+.chip button { border: none; background: transparent; padding: 0 3px; font-size: 1rem; line-height: 1;
+               color: var(--text-faint); border-radius: 50%; }
+.chip button:hover { color: var(--danger); background: transparent; }
+.add-row { display: flex; gap: 6px; }
+.add-row input { flex: 1; }
+.danger-zone { border-top: 1px solid var(--line); margin-top: 18px; padding-top: 16px; }
+.danger-zone p { font-size: .8125rem; color: var(--text-dim); margin: 0 0 10px; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 860px) {
+  .totals { grid-template-columns: 1fr 1fr; }
+  .breakdowns { grid-template-columns: 1fr; }
+  .f-type, .f-date, .f-amount, .f-method { grid-column: span 6; }
+  .f-cat, .f-note { grid-column: span 12; }
+  .fl-period, .fl-type { grid-column: span 6; }
+  .fl-from, .fl-to { grid-column: span 6; }
+  .fl-search { grid-column: span 12; }
+  .filters.custom-hidden .fl-period, .filters.custom-hidden .fl-type { grid-column: span 6; }
+  .filters.custom-hidden .fl-search { grid-column: span 12; }
+}
+@media (max-width: 620px) {
+  .wrap { padding: 16px 12px 56px; }
+  .total dd { font-size: 1.25rem; }
+  table thead { display: none; }
+  table, tbody, tr, td { display: block; width: 100%; }
+  tbody tr { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+             margin-bottom: 10px; position: relative; background: var(--surface); }
+  tbody tr:hover { background: var(--surface); }
+  td { border: none; padding: 2px 0; }
+  td.amount { text-align: left; font-size: 1.0625rem; }
+  td.row-actions { text-align: left; width: auto; padding-top: 8px; }
+  tfoot td { border-top: none; }
+}
+@media print {
+  body { background: #fff; }
+  .no-print { display: none !important; }
+  .card, .total { box-shadow: none; border-color: #ccc; break-inside: avoid; }
+  .wrap { max-width: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <h1><span id="biz-name" contenteditable="true" spellcheck="false" role="textbox"
+                aria-label="Business name, click to edit">My Business</span></h1>
+      <p>Income &amp; expense tracker<span id="saved-note"></span></p>
+    </div>
+    <div class="top-actions no-print">
+      <button type="button" id="btn-export">Export CSV</button>
+      <button type="button" id="btn-import">Import CSV</button>
+      <button type="button" id="btn-print">Print</button>
+      <button type="button" id="btn-settings" aria-haspopup="dialog">Settings</button>
+      <button type="button" id="btn-theme" aria-label="Switch between light and dark">Theme</button>
+      <input type="file" id="file-input" accept=".csv,text/csv" hidden>
+    </div>
+  </header>
+
+  <!-- ---------- add / edit ---------- -->
+  <form class="card no-print" id="entry-form" autocomplete="off">
+    <div class="card-head">
+      <h2 id="form-title">Add a transaction</h2>
+      <span class="hint" id="edit-hint" hidden>Editing an existing entry</span>
+    </div>
+
+    <div class="form-grid">
+      <div class="f-type">
+        <label id="type-label">Type</label>
+        <div class="type-toggle" role="radiogroup" aria-labelledby="type-label">
+          <input type="radio" name="type" id="t-income" value="income">
+          <label for="t-income">Income</label>
+          <input type="radio" name="type" id="t-expense" value="expense" checked>
+          <label for="t-expense">Expense</label>
+        </div>
+      </div>
+
+      <div class="f-date">
+        <label for="f-date">Date</label>
+        <input type="date" id="f-date" name="date" required>
+      </div>
+
+      <div class="f-amount">
+        <label for="f-amount">Amount</label>
+        <input type="text" id="f-amount" name="amount" inputmode="decimal"
+               placeholder="0.00" required aria-describedby="amount-err">
+      </div>
+
+      <div class="f-method">
+        <label for="f-method">Payment method</label>
+        <select id="f-method" name="method"></select>
+      </div>
+
+      <div class="f-cat">
+        <label for="f-cat">Category</label>
+        <input type="text" id="f-cat" name="category" list="cat-list" required
+               placeholder="Start typing or pick one">
+        <datalist id="cat-list"></datalist>
+      </div>
+
+      <div class="f-note">
+        <label for="f-note">Note <span style="text-transform:none;font-weight:400">(optional)</span></label>
+        <input type="text" id="f-note" name="note" placeholder="Who, what, invoice number…" maxlength="200">
+      </div>
+    </div>
+
+    <div class="form-foot">
+      <button type="submit" class="primary" id="btn-save">Add transaction</button>
+      <button type="button" id="btn-cancel" hidden>Cancel</button>
+      <span class="spacer"></span>
+      <span class="hint" id="amount-err" role="status"></span>
+    </div>
+  </form>
+
+  <!-- ---------- filters ---------- -->
+  <section class="card no-print" aria-label="Filter transactions">
+    <div class="filters custom-hidden" id="filters">
+      <div class="fl-period">
+        <label for="fl-period">Period</label>
+        <select id="fl-period">
+          <option value="this-month">This month</option>
+          <option value="last-month">Last month</option>
+          <option value="this-quarter">This quarter</option>
+          <option value="this-year">This year</option>
+          <option value="last-year">Last year</option>
+          <option value="all" selected>All time</option>
+          <option value="custom">Custom range…</option>
+        </select>
+      </div>
+      <div class="fl-from">
+        <label for="fl-from">From</label>
+        <input type="date" id="fl-from">
+      </div>
+      <div class="fl-to">
+        <label for="fl-to">To</label>
+        <input type="date" id="fl-to">
+      </div>
+      <div class="fl-type">
+        <label for="fl-type">Show</label>
+        <select id="fl-type">
+          <option value="all" selected>Everything</option>
+          <option value="income">Income only</option>
+          <option value="expense">Expenses only</option>
+        </select>
+      </div>
+      <div class="fl-search">
+        <label for="fl-search">Search</label>
+        <input type="search" id="fl-search" placeholder="Category or note">
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- totals ---------- -->
+  <dl class="totals" id="totals">
+    <div class="total in"><dt>Income</dt><dd id="tot-income">—</dd></div>
+    <div class="total ex"><dt>Expenses</dt><dd id="tot-expense">—</dd></div>
+    <div class="total net" id="tot-net-box"><dt>Net</dt><dd id="tot-net">—</dd></div>
+    <div class="total"><dt>Transactions</dt><dd id="tot-count">—</dd>
+      <div class="sub" id="tot-range">no data yet</div></div>
+  </dl>
+
+  <!-- ---------- chart ---------- -->
+  <section class="card" id="chart-card" hidden>
+    <div class="card-head">
+      <h2>Month by month</h2>
+      <div class="chart-legend">
+        <span><i class="swatch" style="background:var(--income-bar)"></i>Income</span>
+        <span><i class="swatch" style="background:var(--expense-bar)"></i>Expenses</span>
+      </div>
+    </div>
+    <div class="chart-scroll"><svg class="chart" id="chart" role="img"
+         aria-label="Monthly income and expenses"></svg></div>
+  </section>
+
+  <!-- ---------- breakdown ---------- -->
+  <section class="card" id="breakdown-card" hidden>
+    <h2>Where the money went</h2>
+    <div class="breakdowns">
+      <div class="bd in"><h3>Income by category</h3><div id="bd-income"></div></div>
+      <div class="bd ex"><h3>Expenses by category</h3><div id="bd-expense"></div></div>
+    </div>
+  </section>
+
+  <!-- ---------- table ---------- -->
+  <section class="card">
+    <div class="card-head">
+      <h2>Transactions <span class="hint" id="tbl-count"></span></h2>
+    </div>
+    <div class="table-scroll">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th class="sortable" data-sort="date" scope="col">Date <span class="arrow"></span></th>
+            <th class="sortable" data-sort="category" scope="col">Category <span class="arrow"></span></th>
+            <th scope="col">Note</th>
+            <th scope="col">Method</th>
+            <th class="sortable" data-sort="amount" scope="col" style="text-align:right">Amount <span class="arrow"></span></th>
+            <th class="no-print" scope="col"><span class="sr-only">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+        <tfoot id="tfoot" hidden>
+          <tr><td colspan="4">Net for this view</td>
+              <td class="amount" id="foot-net"></td><td class="no-print"></td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="empty" id="empty" hidden></div>
+  </section>
+
+  <p class="hint no-print" style="text-align:center">
+    Everything you enter stays in this browser, on this device. Export a CSV now and then — that is your backup.
+  </p>
+</div>
+
+<div id="toast" role="status" aria-live="polite" hidden>
+  <span id="toast-msg"></span>
+  <button type="button" id="toast-action" hidden>Undo</button>
+</div>
+
+<!-- ---------- settings ---------- -->
+<dialog id="settings">
+  <div class="dlg-head">
+    <h2>Settings</h2>
+    <button type="button" class="ghost" id="dlg-x" aria-label="Close">&times;</button>
+  </div>
+  <div class="dlg-body">
+    <div class="field">
+      <label for="set-currency">Currency</label>
+      <select id="set-currency">
+        <option value="USD">US dollar ($)</option>
+        <option value="CAD">Canadian dollar ($)</option>
+        <option value="EUR">Euro (€)</option>
+        <option value="GBP">Pound sterling (£)</option>
+        <option value="AUD">Australian dollar ($)</option>
+        <option value="NZD">New Zealand dollar ($)</option>
+        <option value="ZAR">South African rand (R)</option>
+        <option value="INR">Indian rupee (₹)</option>
+        <option value="JPY">Japanese yen (¥)</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Income categories</label>
+      <div class="chips" id="chips-income"></div>
+      <div class="add-row">
+        <input type="text" id="add-income" placeholder="Add an income category" maxlength="40">
+        <button type="button" data-add="income">Add</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Expense categories</label>
+      <div class="chips" id="chips-expense"></div>
+      <div class="add-row">
+        <input type="text" id="add-expense" placeholder="Add an expense category" maxlength="40">
+        <button type="button" data-add="expense">Add</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Payment methods</label>
+      <div class="chips" id="chips-method"></div>
+      <div class="add-row">
+        <input type="text" id="add-method" placeholder="Add a payment method" maxlength="40">
+        <button type="button" data-add="method">Add</button>
+      </div>
+    </div>
+
+    <div class="danger-zone">
+      <p><strong>Backup.</strong> A JSON file holds everything — transactions, categories, settings —
+         and restores exactly. CSV is better for a spreadsheet or an accountant.</p>
+      <div class="add-row" style="margin-bottom:16px">
+        <button type="button" id="btn-backup">Download backup</button>
+        <button type="button" id="btn-restore">Restore backup</button>
+        <input type="file" id="restore-input" accept=".json,application/json" hidden>
+      </div>
+      <p><strong>Delete everything.</strong> Removes every transaction from this browser.
+         There is no undo — download a backup first.</p>
+      <button type="button" class="danger" id="btn-wipe">Delete all data</button>
+    </div>
+  </div>
+  <div class="dlg-foot">
+    <button type="button" class="primary" id="dlg-done">Done</button>
+  </div>
+</dialog>
+
+<script>
+(function () {
+  "use strict";
+
+  /* =========================================================
+     Storage
+     Everything lives in this browser. Nothing is ever sent
+     anywhere, so every read and write is wrapped - a browser
+     with site data blocked must still render a usable page.
+     ========================================================= */
+  var KEY = "ietracker.v1";
+  var storageOK = true;
+
+  function readStore() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) { storageOK = false; return null; }
+  }
+  function writeStore() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); }
+    catch (e) {
+      storageOK = false;
+      toast("Could not save - this browser is blocking storage. Export a CSV before you close the page.");
+    }
+  }
+
+  var DEFAULTS = {
+    biz: "My Business",
+    currency: "USD",
+    theme: "",
+    cats: {
+      income: ["Sales", "Services", "Consulting", "Interest", "Other income"],
+      expense: ["Rent", "Utilities", "Supplies", "Inventory", "Payroll", "Contractors",
+                "Software", "Marketing", "Travel", "Meals", "Insurance",
+                "Professional fees", "Bank & processing fees", "Equipment",
+                "Repairs", "Taxes", "Other expense"]
+    },
+    methods: ["Cash", "Debit card", "Credit card", "Bank transfer", "Cheque", "PayPal", "Other"]
+  };
+
+  var state = { records: [], settings: JSON.parse(JSON.stringify(DEFAULTS)) };
+
+  (function load() {
+    var saved = readStore();
+    if (!saved) return;
+    if (Array.isArray(saved.records)) state.records = saved.records.filter(validRecord);
+    var s = saved.settings || {};
+    var t = state.settings;
+    if (typeof s.biz === "string" && s.biz.trim()) t.biz = s.biz.slice(0, 60);
+    if (typeof s.currency === "string") t.currency = s.currency;
+    if (s.theme === "light" || s.theme === "dark") t.theme = s.theme;
+    if (s.cats && Array.isArray(s.cats.income) && s.cats.income.length) t.cats.income = s.cats.income;
+    if (s.cats && Array.isArray(s.cats.expense) && s.cats.expense.length) t.cats.expense = s.cats.expense;
+    if (Array.isArray(s.methods) && s.methods.length) t.methods = s.methods;
+  })();
+
+  function validRecord(r) {
+    return r && typeof r.id === "string" &&
+           /^\d{4}-\d{2}-\d{2}$/.test(r.date) &&
+           (r.type === "income" || r.type === "expense") &&
+           typeof r.cents === "number" && isFinite(r.cents);
+  }
+
+  /* =========================================================
+     Small helpers
+     ========================================================= */
+  var $ = function (sel) { return document.querySelector(sel); };
+  var $$ = function (sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); };
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function uid() {
+    return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+  }
+  function isoToday() { return toISO(new Date()); }
+  function toISO(d) {
+    var m = String(d.getMonth() + 1).padStart(2, "0");
+    var day = String(d.getDate()).padStart(2, "0");
+    return d.getFullYear() + "-" + m + "-" + day;
+  }
+
+  /* Money is held as whole cents. Floating point dollars drift
+     once you start adding them up; integers do not. */
+  function parseAmount(str) {
+    var cleaned = String(str).replace(/[^0-9.,-]/g, "").trim();
+    if (!cleaned) return null;
+    // 1.234,56 (European) vs 1,234.56 - decide by which separator comes last
+    var lastDot = cleaned.lastIndexOf("."), lastComma = cleaned.lastIndexOf(",");
+    if (lastComma > lastDot) cleaned = cleaned.replace(/\./g, "").replace(",", ".");
+    else cleaned = cleaned.replace(/,/g, "");
+    var n = parseFloat(cleaned);
+    if (!isFinite(n)) return null;
+    n = Math.abs(n);
+    var cents = Math.round(n * 100);
+    if (cents <= 0 || cents > 1e13) return null;
+    return cents;
+  }
+
+  var ZERO_DECIMAL = { JPY: true, KRW: true, VND: true };
+  function money(cents) {
+    var cur = state.settings.currency || "USD";
+    var digits = ZERO_DECIMAL[cur] ? 0 : 2;
+    try {
+      return new Intl.NumberFormat(undefined, {
+        style: "currency", currency: cur,
+        minimumFractionDigits: digits, maximumFractionDigits: digits
+      }).format(cents / 100);
+    } catch (e) {
+      return (cents / 100).toFixed(digits);
+    }
+  }
+  function moneyShort(cents) {
+    var v = Math.abs(cents) / 100;
+    if (v >= 1000000) return (v / 1000000).toFixed(v >= 10000000 ? 0 : 1) + "M";
+    if (v >= 1000) return (v / 1000).toFixed(v >= 10000 ? 0 : 1) + "k";
+    return String(Math.round(v));
+  }
+  function prettyDate(iso) {
+    var p = iso.split("-");
+    var d = new Date(+p[0], +p[1] - 1, +p[2]);
+    return d.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
+  }
+  function monthLabel(key) {
+    var p = key.split("-");
+    var d = new Date(+p[0], +p[1] - 1, 1);
+    return d.toLocaleDateString(undefined, { month: "short" }) + (p[1] === "01" ? " " + p[0].slice(2) : "");
+  }
+
+  /* =========================================================
+     Toast, with an undo slot for deletions
+     ========================================================= */
+  var toastEl = $("#toast"), toastMsg = $("#toast-msg"), toastBtn = $("#toast-action"), toastTimer;
+  function toast(msg, undoFn) {
+    clearTimeout(toastTimer);
+    toastMsg.textContent = msg;
+    toastEl.hidden = false;
+    toastBtn.hidden = !undoFn;
+    toastBtn.onclick = undoFn ? function () { undoFn(); hideToast(); } : null;
+    requestAnimationFrame(function () { toastEl.classList.add("show"); });
+    toastTimer = setTimeout(hideToast, undoFn ? 7000 : 3600);
+  }
+  function hideToast() {
+    clearTimeout(toastTimer);
+    toastEl.classList.remove("show");
+    setTimeout(function () { if (!toastEl.classList.contains("show")) toastEl.hidden = true; }, 240);
+  }
+
+  /* =========================================================
+     Filtering
+     ========================================================= */
+  var view = { period: "all", from: "", to: "", type: "all", q: "", sort: "date", dir: -1 };
+
+  function periodRange() {
+    var now = new Date(), y = now.getFullYear(), m = now.getMonth();
+    function firstOf(yy, mm) { return toISO(new Date(yy, mm, 1)); }
+    function lastOf(yy, mm) { return toISO(new Date(yy, mm + 1, 0)); }
+    switch (view.period) {
+      case "this-month":   return [firstOf(y, m), lastOf(y, m)];
+      case "last-month":   return [firstOf(y, m - 1), lastOf(y, m - 1)];
+      case "this-quarter": var q = Math.floor(m / 3) * 3; return [firstOf(y, q), lastOf(y, q + 2)];
+      case "this-year":    return [y + "-01-01", y + "-12-31"];
+      case "last-year":    return [(y - 1) + "-01-01", (y - 1) + "-12-31"];
+      case "custom":       return [view.from || "0000-01-01", view.to || "9999-12-31"];
+      default:             return null;
+    }
+  }
+
+  function filtered() {
+    var range = periodRange();
+    var q = view.q.trim().toLowerCase();
+    var out = state.records.filter(function (r) {
+      if (range && (r.date < range[0] || r.date > range[1])) return false;
+      if (view.type !== "all" && r.type !== view.type) return false;
+      if (q) {
+        var hay = (r.category + " " + (r.note || "") + " " + (r.method || "")).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+    out.sort(function (a, b) {
+      var d;
+      if (view.sort === "amount") d = a.cents - b.cents;
+      else if (view.sort === "category") d = a.category.localeCompare(b.category);
+      else d = a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
+      if (d === 0) d = (a.created || "") < (b.created || "") ? -1 : 1;
+      return d * view.dir;
+    });
+    return out;
+  }
+
+  /* =========================================================
+     Rendering
+     ========================================================= */
+  function renderAll() {
+    var rows = filtered();
+    renderTotals(rows);
+    renderChart(rows);
+    renderBreakdown(rows);
+    renderTable(rows);
+  }
+
+  function sums(rows) {
+    var inc = 0, exp = 0;
+    rows.forEach(function (r) { if (r.type === "income") inc += r.cents; else exp += r.cents; });
+    return { income: inc, expense: exp, net: inc - exp };
+  }
+
+  function renderTotals(rows) {
+    var s = sums(rows);
+    $("#tot-income").textContent = money(s.income);
+    $("#tot-expense").textContent = money(s.expense);
+    $("#tot-net").textContent = money(s.net);
+    var box = $("#tot-net-box");
+    box.classList.toggle("pos", s.net > 0);
+    box.classList.toggle("neg", s.net < 0);
+    $("#tot-count").textContent = String(rows.length);
+
+    var range = $("#tot-range");
+    if (!rows.length) { range.textContent = state.records.length ? "nothing in this view" : "no data yet"; return; }
+    var dates = rows.map(function (r) { return r.date; }).sort();
+    var a = dates[0], b = dates[dates.length - 1];
+    range.textContent = a === b ? prettyDate(a) : prettyDate(a) + " – " + prettyDate(b);
+  }
+
+  /* Grouped bars, drawn by hand. A chart library would be a
+     download; this is a few dozen lines and never goes stale. */
+  function renderChart(rows) {
+    var card = $("#chart-card"), svg = $("#chart");
+    var byMonth = {};
+    rows.forEach(function (r) {
+      var k = r.date.slice(0, 7);
+      if (!byMonth[k]) byMonth[k] = { income: 0, expense: 0 };
+      byMonth[k][r.type] += r.cents;
+    });
+    var keys = Object.keys(byMonth).sort().slice(-12);
+    if (keys.length < 2) { card.hidden = true; return; }
+    card.hidden = false;
+
+    var padL = 46, padR = 8, padT = 10, padB = 26, h = 200;
+    var slot = Math.max(44, Math.min(96, Math.floor((880 - padL - padR) / keys.length)));
+    var w = padL + padR + slot * keys.length;
+    var plotH = h - padT - padB;
+
+    var max = 0;
+    keys.forEach(function (k) { max = Math.max(max, byMonth[k].income, byMonth[k].expense); });
+    if (max <= 0) max = 100;
+    var step = niceStep(max / 4);
+    var top = Math.ceil(max / step) * step;
+
+    var parts = [];
+    for (var v = 0; v <= top + 1; v += step) {
+      var y = padT + plotH - (v / top) * plotH;
+      parts.push('<line class="grid' + (v === 0 ? " zero" : "") + '" x1="' + padL + '" y1="' + y +
+                 '" x2="' + (w - padR) + '" y2="' + y + '"/>');
+      parts.push('<text x="' + (padL - 6) + '" y="' + (y + 4) + '" text-anchor="end">' +
+                 esc(moneyShort(v)) + "</text>");
+    }
+
+    var barW = Math.floor(slot * 0.32), gap = 3;
+    keys.forEach(function (k, i) {
+      var cx = padL + slot * i + slot / 2;
+      var d = byMonth[k];
+      [["income", -1], ["expense", 1]].forEach(function (pair) {
+        var val = d[pair[0]];
+        var bh = Math.max(val > 0 ? 2 : 0, (val / top) * plotH);
+        var x = pair[1] < 0 ? cx - barW - gap / 2 : cx + gap / 2;
+        var y = padT + plotH - bh;
+        if (bh > 0) {
+          parts.push('<rect x="' + x + '" y="' + y + '" width="' + barW + '" height="' + bh +
+                     '" rx="2" fill="var(--' + pair[0] + '-bar)"><title>' +
+                     esc(monthLabel(k) + " " + pair[0] + ": " + money(val)) + "</title></rect>");
+        }
+      });
+      parts.push('<text x="' + cx + '" y="' + (h - 8) + '" text-anchor="middle">' +
+                 esc(monthLabel(k)) + "</text>");
+    });
+
+    svg.setAttribute("viewBox", "0 0 " + w + " " + h);
+    svg.setAttribute("width", w);
+    svg.setAttribute("height", h);
+    svg.style.maxWidth = w + "px";
+    svg.innerHTML = parts.join("");
+  }
+
+  function niceStep(raw) {
+    var pow = Math.pow(10, Math.floor(Math.log(Math.max(raw, 1)) / Math.LN10));
+    var n = raw / pow;
+    var mult = n <= 1 ? 1 : n <= 2 ? 2 : n <= 5 ? 5 : 10;
+    return Math.max(1, mult * pow);
+  }
+
+  function renderBreakdown(rows) {
+    var card = $("#breakdown-card");
+    if (!rows.length) { card.hidden = true; return; }
+    card.hidden = false;
+    ["income", "expense"].forEach(function (type) {
+      var by = {}, total = 0;
+      rows.forEach(function (r) {
+        if (r.type !== type) return;
+        by[r.category] = (by[r.category] || 0) + r.cents;
+        total += r.cents;
+      });
+      var list = Object.keys(by).map(function (c) { return { cat: c, cents: by[c] }; })
+                       .sort(function (a, b) { return b.cents - a.cents; });
+      var host = $("#bd-" + type);
+      if (!list.length) {
+        host.innerHTML = '<p class="hint">No ' + type + " in this view.</p>";
+        return;
+      }
+      host.innerHTML = list.map(function (item) {
+        var pct = total ? (item.cents / total) * 100 : 0;
+        return '<div class="bd-row">' +
+                 '<div class="bd-line"><span>' + esc(item.cat) + '</span>' +
+                   '<span class="amt">' + esc(money(item.cents)) +
+                     ' <span class="pct">' + pct.toFixed(0) + "%</span></span></div>" +
+                 '<div class="bar"><i style="width:' + pct.toFixed(1) + '%"></i></div>' +
+               "</div>";
+      }).join("");
+    });
+  }
+
+  function renderTable(rows) {
+    var tbody = $("#tbody"), empty = $("#empty"), tfoot = $("#tfoot");
+    $("#tbl-count").textContent = rows.length ? "(" + rows.length + ")" : "";
+
+    if (!rows.length) {
+      tbody.innerHTML = "";
+      tfoot.hidden = true;
+      empty.hidden = false;
+      empty.textContent = state.records.length
+        ? "No transactions match these filters."
+        : "Nothing recorded yet. Add your first transaction above.";
+      return;
+    }
+    empty.hidden = true;
+    tfoot.hidden = false;
+
+    tbody.innerHTML = rows.map(function (r) {
+      var sign = r.type === "income" ? "+" : "−";
+      var cls = r.type === "income" ? "in" : "ex";
+      return "<tr>" +
+        '<td class="date">' + esc(prettyDate(r.date)) + "</td>" +
+        "<td><span class=\"pill\">" + esc(r.category) + "</span></td>" +
+        '<td class="note">' + esc(r.note || "") + "</td>" +
+        '<td class="note">' + esc(r.method || "") + "</td>" +
+        '<td class="amount ' + cls + '">' + sign + " " + esc(money(r.cents)) + "</td>" +
+        '<td class="row-actions no-print">' +
+          '<button type="button" class="ghost" data-edit="' + esc(r.id) + '">Edit</button>' +
+          '<button type="button" class="ghost danger" data-del="' + esc(r.id) + '">Delete</button>' +
+        "</td></tr>";
+    }).join("");
+
+    var s = sums(rows);
+    var foot = $("#foot-net");
+    foot.textContent = money(s.net);
+    foot.className = "amount " + (s.net < 0 ? "ex" : "in");
+  }
+
+  function renderSortArrows() {
+    $$("th.sortable").forEach(function (th) {
+      var a = th.querySelector(".arrow");
+      a.textContent = th.dataset.sort === view.sort ? (view.dir === 1 ? "▲" : "▼") : "";
+    });
+  }
+
+  /* =========================================================
+     Add / edit form
+     ========================================================= */
+  var editingId = null;
+  var form = $("#entry-form");
+
+  function currentType() {
+    return $("#t-income").checked ? "income" : "expense";
+  }
+
+  function refreshCategoryList() {
+    var cats = state.settings.cats[currentType()] || [];
+    $("#cat-list").innerHTML = cats.map(function (c) {
+      return '<option value="' + esc(c) + '"></option>';
+    }).join("");
+  }
+
+  function refreshMethods() {
+    var sel = $("#f-method"), keep = sel.value;
+    sel.innerHTML = state.settings.methods.map(function (m) {
+      return '<option value="' + esc(m) + '">' + esc(m) + "</option>";
+    }).join("");
+    if (keep && state.settings.methods.indexOf(keep) !== -1) sel.value = keep;
+  }
+
+  function resetForm() {
+    editingId = null;
+    form.reset();
+    $("#t-expense").checked = true;
+    $("#f-date").value = isoToday();
+    $("#form-title").textContent = "Add a transaction";
+    $("#btn-save").textContent = "Add transaction";
+    $("#btn-cancel").hidden = true;
+    $("#edit-hint").hidden = true;
+    form.classList.remove("editing");
+    $("#amount-err").textContent = "";
+    refreshCategoryList();
+    refreshMethods();
+  }
+
+  function startEdit(id) {
+    var r = state.records.find(function (x) { return x.id === id; });
+    if (!r) return;
+    editingId = id;
+    $(r.type === "income" ? "#t-income" : "#t-expense").checked = true;
+    refreshCategoryList();
+    $("#f-date").value = r.date;
+    $("#f-amount").value = (r.cents / 100).toFixed(ZERO_DECIMAL[state.settings.currency] ? 0 : 2);
+    $("#f-cat").value = r.category;
+    $("#f-note").value = r.note || "";
+    refreshMethods();
+    if (r.method && state.settings.methods.indexOf(r.method) === -1) {
+      $("#f-method").insertAdjacentHTML("beforeend",
+        '<option value="' + esc(r.method) + '">' + esc(r.method) + "</option>");
+    }
+    $("#f-method").value = r.method || state.settings.methods[0];
+    $("#form-title").textContent = "Edit transaction";
+    $("#btn-save").textContent = "Save changes";
+    $("#btn-cancel").hidden = false;
+    $("#edit-hint").hidden = false;
+    form.classList.add("editing");
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
+    $("#f-amount").focus();
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var cents = parseAmount($("#f-amount").value);
+    var err = $("#amount-err");
+    if (cents === null) {
+      err.textContent = "Enter an amount greater than zero.";
+      $("#f-amount").focus();
+      return;
+    }
+    var date = $("#f-date").value;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+      err.textContent = "Pick a valid date.";
+      return;
+    }
+    var cat = $("#f-cat").value.trim();
+    if (!cat) { err.textContent = "Give it a category."; return; }
+    err.textContent = "";
+
+    var type = currentType();
+    if (state.settings.cats[type].indexOf(cat) === -1) state.settings.cats[type].push(cat);
+
+    if (editingId) {
+      var r = state.records.find(function (x) { return x.id === editingId; });
+      if (r) {
+        r.date = date; r.type = type; r.cents = cents; r.category = cat;
+        r.method = $("#f-method").value; r.note = $("#f-note").value.trim();
+      }
+      toast("Transaction updated.");
+    } else {
+      state.records.push({
+        id: uid(), date: date, type: type, cents: cents, category: cat,
+        method: $("#f-method").value, note: $("#f-note").value.trim(),
+        created: new Date().toISOString()
+      });
+      toast((type === "income" ? "Income" : "Expense") + " of " + money(cents) + " added.");
+    }
+    writeStore();
+    resetForm();
+    renderAll();
+  });
+
+  $("#btn-cancel").addEventListener("click", function () { resetForm(); renderAll(); });
+  $$("input[name=type]").forEach(function (el) {
+    el.addEventListener("change", refreshCategoryList);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && editingId && !$("#settings").open) { resetForm(); renderAll(); }
+  });
+
+  $("#tbody").addEventListener("click", function (e) {
+    var edit = e.target.closest("[data-edit]"), del = e.target.closest("[data-del]");
+    if (edit) return startEdit(edit.dataset.edit);
+    if (!del) return;
+
+    var id = del.dataset.del;
+    var idx = state.records.findIndex(function (x) { return x.id === id; });
+    if (idx === -1) return;
+    var removed = state.records.splice(idx, 1)[0];
+    if (editingId === id) resetForm();
+    writeStore();
+    renderAll();
+    toast("Deleted " + money(removed.cents) + " – " + removed.category + ".", function () {
+      state.records.splice(idx, 0, removed);
+      writeStore();
+      renderAll();
+      toast("Restored.");
+    });
+  });
+
+  /* =========================================================
+     Filter controls
+     ========================================================= */
+  function syncCustomVisibility() {
+    $("#filters").classList.toggle("custom-hidden", view.period !== "custom");
+  }
+  $("#fl-period").addEventListener("change", function () {
+    view.period = this.value;
+    if (view.period === "custom") {
+      if (!$("#fl-from").value && state.records.length) {
+        var dates = state.records.map(function (r) { return r.date; }).sort();
+        $("#fl-from").value = dates[0];
+        $("#fl-to").value = dates[dates.length - 1];
+        view.from = $("#fl-from").value; view.to = $("#fl-to").value;
+      }
+    }
+    syncCustomVisibility();
+    renderAll();
+  });
+  $("#fl-from").addEventListener("change", function () { view.from = this.value; renderAll(); });
+  $("#fl-to").addEventListener("change", function () { view.to = this.value; renderAll(); });
+  $("#fl-type").addEventListener("change", function () { view.type = this.value; renderAll(); });
+  $("#fl-search").addEventListener("input", function () { view.q = this.value; renderAll(); });
+
+  $$("th.sortable").forEach(function (th) {
+    th.addEventListener("click", function () {
+      var key = th.dataset.sort;
+      if (view.sort === key) view.dir = -view.dir;
+      else { view.sort = key; view.dir = key === "category" ? 1 : -1; }
+      renderSortArrows();
+      renderAll();
+    });
+  });
+
+  /* =========================================================
+     CSV in and out
+     The export is deliberately plain: one row per transaction,
+     positive amounts, a Type column saying which way it went.
+     That opens cleanly in any spreadsheet.
+     ========================================================= */
+  function csvCell(v) {
+    var s = String(v == null ? "" : v);
+    return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  }
+
+  function exportCSV() {
+    var rows = filtered();
+    if (!rows.length) { toast("Nothing to export in this view."); return; }
+    var digits = ZERO_DECIMAL[state.settings.currency] ? 0 : 2;
+    var lines = [["Date", "Type", "Category", "Amount", "Currency", "Method", "Note"].join(",")];
+    rows.slice().sort(function (a, b) { return a.date < b.date ? -1 : 1; }).forEach(function (r) {
+      lines.push([
+        r.date,
+        r.type === "income" ? "Income" : "Expense",
+        csvCell(r.category),
+        (r.cents / 100).toFixed(digits),
+        state.settings.currency,
+        csvCell(r.method || ""),
+        csvCell(r.note || "")
+      ].join(","));
+    });
+    var s = sums(rows);
+    lines.push("");
+    lines.push(csvCell("Totals") + ",Income," + (s.income / 100).toFixed(digits));
+    lines.push(",Expenses," + (s.expense / 100).toFixed(digits));
+    lines.push(",Net," + (s.net / 100).toFixed(digits));
+
+    var slug = (state.settings.biz || "business").toLowerCase()
+                 .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "business";
+    download(slug + "-transactions-" + isoToday() + ".csv",
+             "﻿" + lines.join("\r\n"), "text/csv;charset=utf-8");
+    toast("Exported " + rows.length + " transaction" + (rows.length === 1 ? "" : "s") + ".");
+  }
+
+  function download(name, text, mime) {
+    var blob = new Blob([text], { type: mime });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url; a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+
+  function parseCSV(text) {
+    var rows = [], row = [], field = "", inQ = false;
+    text = text.replace(/^﻿/, "");
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (inQ) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { field += '"'; i++; }
+          else inQ = false;
+        } else field += c;
+      } else if (c === '"') inQ = true;
+      else if (c === ",") { row.push(field); field = ""; }
+      else if (c === "\n" || c === "\r") {
+        if (c === "\r" && text[i + 1] === "\n") i++;
+        row.push(field); field = "";
+        if (row.some(function (f) { return f.trim() !== ""; })) rows.push(row);
+        row = [];
+      } else field += c;
+    }
+    row.push(field);
+    if (row.some(function (f) { return f.trim() !== ""; })) rows.push(row);
+    return rows;
+  }
+
+  function normalizeDate(raw) {
+    var s = String(raw).trim();
+    if (/^\d{4}-\d{1,2}-\d{1,2}$/.test(s)) {
+      var p = s.split("-");
+      return p[0] + "-" + p[1].padStart(2, "0") + "-" + p[2].padStart(2, "0");
+    }
+    var slash = s.match(/^(\d{1,2})[\/.](\d{1,2})[\/.](\d{4})$/);
+    if (slash) {
+      var a = +slash[1], b = +slash[2], y = slash[3];
+      // A value above 12 can only be the day, which settles the order.
+      var mm = a > 12 ? b : a, dd = a > 12 ? a : b;
+      return y + "-" + String(mm).padStart(2, "0") + "-" + String(dd).padStart(2, "0");
+    }
+    var d = new Date(s);
+    return isNaN(d.getTime()) ? null : toISO(d);
+  }
+
+  function importCSV(text) {
+    var rows = parseCSV(text);
+    if (rows.length < 2) { toast("That file has no rows I can read."); return; }
+
+    var head = rows[0].map(function (h) { return h.trim().toLowerCase(); });
+    var col = function (names) {
+      for (var i = 0; i < names.length; i++) {
+        var idx = head.indexOf(names[i]);
+        if (idx !== -1) return idx;
+      }
+      return -1;
+    };
+    var cDate = col(["date", "transaction date", "posted"]);
+    var cAmt = col(["amount", "value", "total"]);
+    var cType = col(["type", "direction", "kind"]);
+    var cCat = col(["category", "account"]);
+    var cMethod = col(["method", "payment method", "paid by"]);
+    var cNote = col(["note", "notes", "description", "memo", "details"]);
+
+    if (cDate === -1 || cAmt === -1) {
+      toast("Need at least a Date column and an Amount column.");
+      return;
+    }
+
+    var added = 0, dupes = 0, skipped = 0;
+    var seen = {};
+    state.records.forEach(function (r) {
+      seen[r.date + "|" + r.type + "|" + r.cents + "|" + r.category + "|" + (r.note || "")] = true;
+    });
+
+    for (var i = 1; i < rows.length; i++) {
+      var row = rows[i];
+      var date = normalizeDate(row[cDate] || "");
+      var rawAmt = String(row[cAmt] == null ? "" : row[cAmt]).trim();
+      var cents = parseAmount(rawAmt);
+
+      // The totals block this tracker writes at the foot of its own
+      // exports is not a transaction. Skip it quietly rather than
+      // reporting the file as damaged.
+      if (!date) {
+        var first = String(row[0] || "").trim().toLowerCase();
+        if (first === "" || first === "totals") continue;
+      }
+      if (!date || cents === null) { skipped++; continue; }
+
+      var type;
+      var typeRaw = cType !== -1 ? String(row[cType] || "").trim().toLowerCase() : "";
+      if (typeRaw.indexOf("in") === 0 || typeRaw === "credit" || typeRaw === "deposit") type = "income";
+      else if (typeRaw) type = "expense";
+      else type = /^\s*-/.test(rawAmt) || /^\(.*\)$/.test(rawAmt) ? "expense" : "income";
+
+      var cat = (cCat !== -1 ? String(row[cCat] || "").trim() : "") ||
+                (type === "income" ? "Other income" : "Other expense");
+      var note = cNote !== -1 ? String(row[cNote] || "").trim().slice(0, 200) : "";
+      var method = cMethod !== -1 ? String(row[cMethod] || "").trim() : "";
+
+      var key = date + "|" + type + "|" + cents + "|" + cat + "|" + note;
+      if (seen[key]) { dupes++; continue; }
+      seen[key] = true;
+
+      state.records.push({
+        id: uid(), date: date, type: type, cents: cents, category: cat,
+        method: method, note: note, created: new Date().toISOString()
+      });
+      if (state.settings.cats[type].indexOf(cat) === -1) state.settings.cats[type].push(cat);
+      if (method && state.settings.methods.indexOf(method) === -1) state.settings.methods.push(method);
+      added++;
+    }
+
+    writeStore();
+    refreshMethods();
+    refreshCategoryList();
+    renderChips();
+    renderAll();
+
+    var msg = "Imported " + added + " transaction" + (added === 1 ? "" : "s") + ".";
+    if (dupes) msg += " " + dupes + " already present, skipped.";
+    if (skipped) msg += " " + skipped + " unreadable row" + (skipped === 1 ? "" : "s") + ".";
+    toast(msg);
+  }
+
+  /* =========================================================
+     Settings
+     ========================================================= */
+  var dlg = $("#settings");
+
+  function renderChips() {
+    [["income", "#chips-income"], ["expense", "#chips-expense"], ["method", "#chips-method"]]
+      .forEach(function (pair) {
+        var kind = pair[0];
+        var list = kind === "method" ? state.settings.methods : state.settings.cats[kind];
+        $(pair[1]).innerHTML = list.map(function (v) {
+          return '<span class="chip">' + esc(v) +
+                 '<button type="button" data-remove="' + kind + '" data-value="' + esc(v) +
+                 '" aria-label="Remove ' + esc(v) + '">&times;</button></span>';
+        }).join("");
+      });
+  }
+
+  function addItem(kind) {
+    var input = $("#add-" + kind);
+    var v = input.value.trim();
+    if (!v) return;
+    var list = kind === "method" ? state.settings.methods : state.settings.cats[kind];
+    if (list.indexOf(v) === -1) list.push(v);
+    input.value = "";
+    writeStore();
+    renderChips();
+    refreshCategoryList();
+    refreshMethods();
+  }
+
+  $$("[data-add]").forEach(function (btn) {
+    btn.addEventListener("click", function () { addItem(btn.dataset.add); });
+  });
+  ["income", "expense", "method"].forEach(function (kind) {
+    $("#add-" + kind).addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { e.preventDefault(); addItem(kind); }
+    });
+  });
+
+  $(".dlg-body").addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-remove]");
+    if (!btn) return;
+    var kind = btn.dataset.remove, v = btn.dataset.value;
+    var list = kind === "method" ? state.settings.methods : state.settings.cats[kind];
+    var i = list.indexOf(v);
+    if (i !== -1) list.splice(i, 1);
+    writeStore();
+    renderChips();
+    refreshCategoryList();
+    refreshMethods();
+    // Records already filed under this name keep it - removing the
+    // option only stops it being offered for new entries.
+  });
+
+  $("#set-currency").addEventListener("change", function () {
+    state.settings.currency = this.value;
+    writeStore();
+    renderAll();
+  });
+
+  $("#btn-settings").addEventListener("click", function () {
+    renderChips();
+    $("#set-currency").value = state.settings.currency;
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+  });
+  function closeDialog() {
+    if (dlg.close) dlg.close(); else dlg.removeAttribute("open");
+  }
+  $("#dlg-x").addEventListener("click", closeDialog);
+  $("#dlg-done").addEventListener("click", closeDialog);
+
+  /* ---------- backup / restore / wipe ---------- */
+  $("#btn-backup").addEventListener("click", function () {
+    var slug = (state.settings.biz || "business").toLowerCase()
+                 .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "business";
+    download(slug + "-backup-" + isoToday() + ".json",
+             JSON.stringify({ version: 1, exported: new Date().toISOString(),
+                              records: state.records, settings: state.settings }, null, 2),
+             "application/json");
+    toast("Backup downloaded.");
+  });
+
+  $("#btn-restore").addEventListener("click", function () { $("#restore-input").click(); });
+  $("#restore-input").addEventListener("change", function () {
+    var file = this.files && this.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      var data;
+      try { data = JSON.parse(reader.result); }
+      catch (e) { toast("That is not a backup file I can read."); return; }
+      if (!data || !Array.isArray(data.records)) { toast("No transactions found in that file."); return; }
+      var good = data.records.filter(validRecord);
+      if (!confirm("Replace everything currently in this browser with " + good.length +
+                   " transaction(s) from the backup?")) return;
+      state.records = good;
+      if (data.settings) {
+        var s = data.settings;
+        if (typeof s.biz === "string" && s.biz.trim()) state.settings.biz = s.biz.slice(0, 60);
+        if (typeof s.currency === "string") state.settings.currency = s.currency;
+        if (s.cats && Array.isArray(s.cats.income) && s.cats.income.length) state.settings.cats.income = s.cats.income;
+        if (s.cats && Array.isArray(s.cats.expense) && s.cats.expense.length) state.settings.cats.expense = s.cats.expense;
+        if (Array.isArray(s.methods) && s.methods.length) state.settings.methods = s.methods;
+      }
+      writeStore();
+      applySettings();
+      renderChips();
+      renderAll();
+      toast("Restored " + good.length + " transaction" + (good.length === 1 ? "" : "s") + ".");
+    };
+    reader.readAsText(file);
+    this.value = "";
+  });
+
+  $("#btn-wipe").addEventListener("click", function () {
+    if (!state.records.length) { toast("There is nothing to delete."); return; }
+    if (!confirm("Delete all " + state.records.length + " transactions from this browser? This cannot be undone.")) return;
+    if (!confirm("Last check - have you downloaded a backup? Press OK only if you are sure.")) return;
+    state.records = [];
+    writeStore();
+    resetForm();
+    renderAll();
+    closeDialog();
+    toast("All transactions deleted.");
+  });
+
+  /* =========================================================
+     Business name, theme, top bar
+     ========================================================= */
+  var nameEl = $("#biz-name");
+  nameEl.addEventListener("blur", function () {
+    var v = nameEl.textContent.replace(/\s+/g, " ").trim().slice(0, 60);
+    if (!v) v = DEFAULTS.biz;
+    nameEl.textContent = v;
+    state.settings.biz = v;
+    document.title = v + " — Income & Expense Tracker";
+    writeStore();
+  });
+  nameEl.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") { e.preventDefault(); nameEl.blur(); }
+  });
+  nameEl.addEventListener("paste", function (e) {
+    e.preventDefault();
+    var t = (e.clipboardData || window.clipboardData).getData("text");
+    document.execCommand("insertText", false, t.replace(/\s+/g, " ").slice(0, 60));
+  });
+
+  function prefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function applyTheme() {
+    if (state.settings.theme) document.documentElement.setAttribute("data-theme", state.settings.theme);
+    else document.documentElement.removeAttribute("data-theme");
+  }
+  $("#btn-theme").addEventListener("click", function () {
+    var now = state.settings.theme || (prefersDark() ? "dark" : "light");
+    state.settings.theme = now === "dark" ? "light" : "dark";
+    applyTheme();
+    writeStore();
+  });
+
+  $("#btn-export").addEventListener("click", exportCSV);
+  $("#btn-print").addEventListener("click", function () { window.print(); });
+  $("#btn-import").addEventListener("click", function () { $("#file-input").click(); });
+  $("#file-input").addEventListener("change", function () {
+    var file = this.files && this.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () { importCSV(String(reader.result)); };
+    reader.readAsText(file);
+    this.value = "";
+  });
+
+  function applySettings() {
+    nameEl.textContent = state.settings.biz;
+    document.title = state.settings.biz + " — Income & Expense Tracker";
+    $("#set-currency").value = state.settings.currency;
+    applyTheme();
+  }
+
+  /* =========================================================
+     Start
+     ========================================================= */
+  applySettings();
+  resetForm();
+  syncCustomVisibility();
+  renderSortArrows();
+  renderAll();
+
+  if (!storageOK) {
+    $("#saved-note").textContent = " · storage unavailable, nothing will be remembered when you close this page";
+  }
+
+  window.addEventListener("beforeunload", function (e) {
+    if (editingId || $("#f-amount").value.trim()) {
+      e.preventDefault();
+      e.returnValue = "";
+    }
+  });
+})();
+</script>
+</body>
+</html>
