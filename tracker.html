@@ -482,7 +482,8 @@ dialog::backdrop { background: rgba(20,17,15,.5); }
     <div class="field">
       <label for="set-currency">Currency</label>
       <select id="set-currency">
-        <option value="USD">US dollar ($)</option>
+        <option value="BZD">Belize dollar (BZD$)</option>
+        <option value="USD">US dollar (US$)</option>
         <option value="CAD">Canadian dollar ($)</option>
         <option value="EUR">Euro (€)</option>
         <option value="GBP">Pound sterling (£)</option>
@@ -568,7 +569,7 @@ dialog::backdrop { background: rgba(20,17,15,.5); }
 
   var DEFAULTS = {
     biz: "My Business",
-    currency: "USD",
+    currency: "BZD",
     theme: "",
     cats: {
       income: ["Sales", "Services", "Consulting", "Interest", "Other income"],
@@ -589,7 +590,10 @@ dialog::backdrop { background: rgba(20,17,15,.5); }
     var s = saved.settings || {};
     var t = state.settings;
     if (typeof s.biz === "string" && s.biz.trim()) t.biz = s.biz.slice(0, 60);
-    if (typeof s.currency === "string") t.currency = s.currency;
+    if (typeof s.currency === "string" && s.currencyChosen) {
+      t.currency = s.currency;
+      t.currencyChosen = true;
+    }
     if (s.theme === "light" || s.theme === "dark") t.theme = s.theme;
     if (s.cats && Array.isArray(s.cats.income) && s.cats.income.length) t.cats.income = s.cats.income;
     if (s.cats && Array.isArray(s.cats.expense) && s.cats.expense.length) t.cats.expense = s.cats.expense;
@@ -642,16 +646,31 @@ dialog::backdrop { background: rgba(20,17,15,.5); }
   }
 
   var ZERO_DECIMAL = { JPY: true, KRW: true, VND: true };
+
+  /* Belize is a two-currency country in daily practice, and the browser is
+     no help here: asked for BZD it produces either "BZD 1,234.50" or a bare
+     "$1,234.50", the second being indistinguishable from US dollars. So the
+     prefix is set here rather than left to the locale, and USD is marked
+     "US$" so the two can never be read for one another. */
+  var PREFIX = { BZD: "BZD$", USD: "US$" };
+
   function money(cents) {
-    var cur = state.settings.currency || "USD";
+    var cur = state.settings.currency || "BZD";
     var digits = ZERO_DECIMAL[cur] ? 0 : 2;
+    var prefix = PREFIX[cur];
     try {
+      if (prefix) {
+        var n = new Intl.NumberFormat(undefined, {
+          minimumFractionDigits: digits, maximumFractionDigits: digits
+        }).format(Math.abs(cents) / 100);
+        return (cents < 0 ? "-" : "") + prefix + n;
+      }
       return new Intl.NumberFormat(undefined, {
         style: "currency", currency: cur,
         minimumFractionDigits: digits, maximumFractionDigits: digits
       }).format(cents / 100);
     } catch (e) {
-      return (cents / 100).toFixed(digits);
+      return (cents < 0 ? "-" : "") + (prefix || "") + (Math.abs(cents) / 100).toFixed(digits);
     }
   }
   function moneyShort(cents) {
@@ -1306,6 +1325,7 @@ dialog::backdrop { background: rgba(20,17,15,.5); }
 
   $("#set-currency").addEventListener("change", function () {
     state.settings.currency = this.value;
+    state.settings.currencyChosen = true;
     writeStore();
     renderAll();
   });
@@ -1349,7 +1369,10 @@ dialog::backdrop { background: rgba(20,17,15,.5); }
       if (data.settings) {
         var s = data.settings;
         if (typeof s.biz === "string" && s.biz.trim()) state.settings.biz = s.biz.slice(0, 60);
-        if (typeof s.currency === "string") state.settings.currency = s.currency;
+        if (typeof s.currency === "string" && s.currencyChosen) {
+          state.settings.currency = s.currency;
+          state.settings.currencyChosen = true;
+        }
         if (s.cats && Array.isArray(s.cats.income) && s.cats.income.length) state.settings.cats.income = s.cats.income;
         if (s.cats && Array.isArray(s.cats.expense) && s.cats.expense.length) state.settings.cats.expense = s.cats.expense;
         if (Array.isArray(s.methods) && s.methods.length) state.settings.methods = s.methods;
