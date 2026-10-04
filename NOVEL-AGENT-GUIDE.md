@@ -1,59 +1,80 @@
-# Your Web Novel Agent: Beginner's Guide
+# Your Web Novel Writing Team: Beginner's Guide
 
-You have two AI helpers in Claude Code:
+You have a team of six AI agents in Claude Code. You talk to Claude normally. Claude acts as the **producer**: it follows a playbook and hands each step to the right team member. The **lead writer** writes every word of the story and makes the creative calls.
 
-- **web-novelist** writes. It brainstorms, builds your story bible, outlines arcs, and drafts chapters.
-- **novel-editor** critiques. It reads a chapter like a picky reader and tells you what to fix. It never changes your files.
+```
+You (the author)
+  └─ Claude, the producer ── runs the playbook, reports back to you
+       ├─ Lead writer ──────── writes the chapters, decides which feedback to use
+       ├─ Researcher ──────── looks things up on the web
+       ├─ Plot planner ────── plans each chapter scene by scene
+       ├─ Continuity checker ─ checks facts, timeline and stat math
+       ├─ Editor ──────────── critiques the chapter like a picky reader
+       └─ Lore keeper ─────── updates your notes after every chapter
+```
+
+(Why isn't the lead writer the boss of the others? In Claude Code cloud sessions, only the main Claude session is allowed to call agents. So Claude does the scheduling and the lead writer keeps the creative control.)
 
 You don't need to write any code. You just type requests in plain English.
 
+## What happens when you ask for a chapter
+
+1. The **plot planner** writes a plan for the chapter (scenes, goals, ending hook).
+2. If the chapter needs real-world facts, the **researcher** looks them up.
+3. The **lead writer** writes the chapter.
+4. The **continuity checker** and **editor** review it at the same time.
+5. The **lead writer** fixes the problems they found.
+6. The **lore keeper** updates your story notes (chapter log, stats, new characters).
+7. Claude reports back: what happened, the editor's score, and any decisions for you.
+
+Because six agents are working, a chapter takes several minutes and uses more of your Claude usage than a single agent would. For small jobs (rename a character, rewrite one paragraph, brainstorm titles), Claude skips the playbook and asks the lead writer directly.
+
 ## How it remembers your story
 
-AI doesn't remember past conversations on its own. So each novel gets a folder of notes that the agent reads before writing, and updates after:
+AI doesn't remember past conversations on its own. So each novel gets a folder of notes that the team reads before working and updates after:
 
 ```
 novels/
   my-novel-name/
-    story-bible.md   ← characters, world, power system, rules
-    outline.md       ← the plan for arcs and chapters
-    chapter-log.md   ← what happened in each chapter + current stats
+    story-bible.md    ← characters, world, power system, rules
+    outline.md        ← the plan for arcs and chapters
+    chapter-log.md    ← current stats + what happened in each chapter
+    briefs/           ← the plot planner's chapter plans
+    research/         ← the researcher's notes
     chapters/
       chapter-001.md
       chapter-002.md
 ```
 
-The more detail you put in the story bible, the better and more consistent the writing gets. You can open and edit any of these files yourself at any time.
+The more detail in the story bible, the better and more consistent the writing gets. You can open and edit any of these files yourself at any time.
 
 ## Things you can type
 
 **Start a new novel**
-> Use the web-novelist to start a new novel. Idea: a programmer dies and wakes up in a cultivation world as a servant with a system that only gives him debugging skills.
+> Start a new novel. Idea: a programmer dies and wakes up in a cultivation world as a servant with a system that only gives him debugging skills.
 
-**Build the world**
-> Have the web-novelist design the power system for my novel. I want 9 stages, and every breakthrough should cost something.
-
-**Plan**
-> Ask the web-novelist to outline Arc 1 as 15 chapters.
+The researcher studies what readers of that genre love, the lead writer builds the story bible, and the planner outlines Arc 1. Then you get a summary of the choices to approve or change.
 
 **Write**
-> Use the web-novelist to write chapter 1.
+> Write chapter 1.
 >
-> Write the next chapter.
+> Write the next chapter. I want the tournament to start and the rival to cheat.
 
-**Get feedback**
-> Run the novel-editor on chapter 3.
->
-> Have the web-novelist fix the editor's must-fix notes.
-
-**Rewrite**
+**Change things**
 > Rewrite chapter 2 so the fight is shorter and the ending hook is stronger.
+>
+> Change the power system so there are 9 stages instead of 7.
+
+**Ask one assistant directly**
+> Have the researcher look up how Damascus steel was made.
+>
+> Have the editor review chapter 5.
 
 ## Tips for great results
 
 1. **Spend time on the story bible first.** A strong power system and clear protagonist goals make every chapter better.
-2. **Write one chapter at a time and read it.** Tell the agent what you liked and didn't. Your taste is what makes the story yours.
-3. **Use the editor often**, especially on chapters 1–10. Those decide whether readers stay.
-4. **Fix things in the story bible, not just the chapter.** If you change a rule, update the bible so future chapters follow it.
+2. **Read each chapter before asking for the next.** Tell the lead writer what you liked and didn't. Your taste is what makes the story yours.
+3. **Answer the questions in each report.** When the lead writer gives you options for a big decision, pick one, or it will keep going with its recommendation.
 
 ## Saving your work
 
@@ -63,8 +84,27 @@ Your files live in this cloud session, which is temporary. To keep them, ask Cla
 
 That saves everything to your GitHub repository on the `claude/web-novel-agent` branch.
 
-## Changing how the agent writes
+## Changing how the team works
 
-The agent's instructions are plain text in `.claude/agents/web-novelist.md`. You can edit that file, or ask Claude to change it, for example:
+Each agent's instructions are plain text files in `.claude/agents/`:
 
-> Update the web-novelist so chapters are 4,000 words and written in first person.
+The producer's playbook (the order the team works in) is in `CLAUDE.md`.
+
+| File | Agent | AI model |
+|---|---|---|
+| `lead-writer.md` | Lead writer | Same as your session (the strongest available) |
+| `story-researcher.md` | Researcher | Sonnet |
+| `plot-planner.md` | Plot planner | Sonnet |
+| `continuity-checker.md` | Continuity checker | Sonnet |
+| `novel-editor.md` | Editor | Sonnet |
+| `lore-keeper.md` | Lore keeper | Sonnet |
+
+The lead writer gets the strongest model because it writes the actual prose. The assistants use Sonnet, a faster and cheaper model that handles planning, research and checking well. Each agent's model is set on the `model:` line at the top of its file. The options are `opus` (strongest), `sonnet` (middle) and `haiku` (fastest and cheapest).
+
+You can edit them, or ask Claude to, for example:
+
+> Update the lead writer so chapters are 4,000 words and written in first person.
+>
+> Add a new assistant that writes the author's notes at the end of each chapter.
+>
+> Switch the lore keeper to haiku.
