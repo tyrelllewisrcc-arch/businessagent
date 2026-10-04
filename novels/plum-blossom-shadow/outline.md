@@ -1,133 +1,225 @@
-# Outline: PlumBlossomShadow
+# Outline: Plum Blossom Shadow
 
-Tags work the same way as in the story bible: **[Author canon]** comes from the author; **[Proposal — author to confirm]** is a suggestion. Everything in this outline is a proposal unless it is tagged as canon.
+**Status.** Rebuilt after the author imported chapters 1 to 6. This replaces the earlier invented plan completely (nothing from it is canon). Chapters 1 to 6 are written; **the next chapter to write is Chapter 7.**
+
+**Sources.** `story-bible.md`, `chapter-log.md` (state at end of Ch 6), chapters 1 to 6, the author's chapter notes, the compendium (Vol IV wins), `research/genre-report.md`.
+
+**Tag legend.** Everything below is a proposal unless it is tagged as canon.
+- **[Canon]** comes from the author's chapters, notes, compendium or premise.
+- **[Q#]** the beat depends on that numbered question in the bible's "Open questions for the author". The plan assumes the lead writer's recommendation for that question. If the author answers differently, see the Dependency map near the end.
+- **[N#]** a new question this outline raises. Listed under "New questions for the author".
+- Chapters 7 to 10 are written to need as few answers as possible. Where they lean on one, there is a fallback.
+
+---
 
 ## Overall story
 
-- **Where it starts:** **[Author canon: Meiying is an ordinary disciple of the Jianyun Sect, training and cultivating with her friends Suyin and Luo Chengqi.]** Proposal: she is stuck at Qi Gathering Layer 3, thirty-seven days from being sent down the mountain.
-- **Where it ends (if known):** **[Proposal — author to confirm]** Meiying has become one of the most powerful cultivators in the Eastern Reach and the only person who can see the Heavenly Lattice. She defeats the Measure by finding a third way: neither the Measure's plan (drain the many to save the few) nor the sects' silence (let everyone slowly starve), but repairing the world's veins. The final cost and who survives are for the author to decide much later.
-- **Main conflict:** **[Author canon: three young disciples uncover a conspiracy inside their sect while Meiying grows into a powerful cultivator.]** Proposal: the Measure against the sects, over a dying world. Meiying's eyes make her the key both sides want.
-- **Planned length:** **[Proposal — author to confirm]** Arc 1 runs about 20 chapters (about 55,000 words). Later arcs run 30 to 40 chapters each.
-- **Royal Road note:** Platform not final. If it stays Royal Road, build a backlog of about 10 to 15 chapters before posting, then release often early on (3 to 5 chapters a week) so new readers can binge their way into the mystery.
+- **Where it starts [Canon]:** Chu Meiying, 14, youngest child of Sect Head Chu Wulong, is at the peak of Body Tempering in the Jianyun (Sword Cloud) Sect, weeks from her first breakthrough. She walks the Ten Legendary Swords, the hardest constellation in the sect's path, and has one aspect of ten (the Honest Blade). With her friends Suyin and Chengqi she has witnessed a secret meeting between a Shifting Wind elder and a foreign envoy wearing an eastern-highland emblem. Her teacher Elder Fang has since died of Burden backlash.
+- **Main conflict [Canon, from the author's premise]:** three young disciples quietly investigate a conspiracy inside their own sect and risk the attention of people far more powerful than themselves, while Meiying grows from an ordinary disciple into a powerful cultivator and finds that her way of perceiving Qi is far more unusual than she realises. Underneath it, a second question: is strength only what you make alone, or also what you are willing to carry and who you let help you (her father's philosophy against the Burden question, Ch 2 and Ch 4)?
+- **Shape of the whole book (proposal, loose):**
+  1. *The sect's own secret:* what Fang carried, and who broke it (Arc 1).
+  2. *The sect's politics:* who is using the secret, the succession, the first real tests of her new realm and her first Burden decision (Arc 2).
+  3. *The road out:* the two-month journey east and the people the sect has not spoken to in 112 years (Arc 3).
+  4. *The cost of the tenth aspect:* what the Plum Blossom Shadow is, and what it costs (later arcs).
+- **Where it ends:** deliberately open. Fixed by the author: the tenth aspect bears her name, it is "what you become when you have mastered all nine and survived the cost of doing so", and it answers what it means to be a cultivator.
+- **Tone [Canon]:** serious and epic, with dry character humour. No romance is planned unless the author asks for one (bible Q13).
+- **Length and pace (proposal):** Arc 1 is 20 chapters (about 55,000 to 65,000 words at the author's 2,500 to 4,000 words per chapter). Later arcs run 18 to 30 chapters each. If the platform is Royal Road, build a backlog before posting and release 3 chapters a week or more (see the genre report).
 
 ---
 
-## Arc 1: The Seam in the Fog
+## Arc 1: What Fang Carried (Chapters 1 to 20)
 
-- **Arc goal:** Pass the Winter Assessment (reach Layer 5 or be sent down) **and** find out who killed Elder Fang, then stop whatever the meeting was planning before the plum blossoms open.
-- **Main antagonist or obstacle:** Steward Pei Wuyan (the hidden killer inside) and Xie Wuheng (the outsider). Pressure also comes from Meiying's own stalled cultivation, sect authority (Elder Gu), and adults who won't believe "invisible" evidence.
-- **Protagonist's power at the start → end:** Qi Gathering Layer 3 (stuck) → Layer 6. Qi Sight: faint lines and signatures → reading shadows, imprints, scars, seams and flaws.
-  - Breakthroughs: Layer 4 in Ch 6 (insight from Fang's margin notes), Layer 5 in Ch 13 (risky shadow-reading plus Suyin's orchid pill), Layer 6 in Ch 19 (riding the reversed vein tide in the climax).
-- **Climax:** The night the plum blossoms open. Meiying slips through a seam into the Old Plum Grove, finds Fang's hidden flaw in the converted Seventh Node, and pulls it as the vein tide surges. The Cloud Veil screams; Xie escapes; Pei is captured and then silenced by the Measure's restriction as he begins to name the second traitor.
-- **Arc 1 mystery structure (fair play):**
-  1. *Ch 1 to 5:* Who was the elder at the meeting? Was Fang murdered? (Answer to the second: yes, Ch 5.)
-  2. *Ch 6 to 10:* How was he killed, and what did he leave behind? Midpoint flip in Ch 10: the elder at the meeting **was Fang**. So who killed him?
-  3. *Ch 11 to 15:* Who inside could have done it? (Pei.) Who is the outsider? (The blank scholar.) When will they strike? (The plum night.)
-  4. *Ch 16 to 20:* Proof, the letter, the climax, the cost. A second, unknown traitor is still inside.
+**The question the reader wants answered:** What was Elder Fang carrying, what broke it, and what were a Shifting Wind elder and a stranger from the east doing in the silence?
 
-### Timeline (days counted from Ch 1)
-- **Day 1** (3rd of the Eleventh Month): Ch 1. The Winter Assessment is on Day 38. The plums are expected to open around Day 41.
-- **Day 2 and night:** Ch 2 to 3 (the meeting).
-- **Day 3:** Ch 4. Fang enters seclusion and dies that night.
-- **Day 4 to 6:** Ch 4 (end) to 6. Death discovered; body examined; cremation at dawn on Day 6.
-- **Day 8 night:** Ch 7 to 8 (sealed chamber).
-- **Day 9 to 12:** Ch 9 to 10.
-- **Day 13 to 33:** Ch 11 to 12 (time passes in training and investigation).
-- **Day 34 to 37:** Ch 13.
-- **Day 38:** Ch 14 (assessment).
-- **Day 39 to 40:** Ch 15 to 16.
-- **Day 41 and night:** Ch 17 to 19.
-- **Day 42 onward:** Ch 20.
+### Arc card
 
-### Chapter beats
+- **Arc goal:** Find out how and why Elder Fang died, and stop it happening again before the vacant post is filled "within the month" (Ch 6). A personal goal runs alongside: break through to Qi Gathering and learn to fight with Qi without losing the Honest Blade.
+- **Main antagonist or obstacle:**
+  - *The unseen "second hand"*: someone inside the sect who knew the secret and its rules and used the rules to kill. They stay unidentified at the end of Arc 1 [N2].
+  - *The watcher*: a disciple at the outer gate who wears no trim and was not posted by the Iron Sash (Ch 3, Ch 8). He is the second hand's eyes.
+  - *Authority and secrecy*: Rou Shenglan will not share what she knows. The Iron Sash handled the letter, the courier, the archive and the body.
+  - *Meiying herself*: her honesty cannot easily hold a secret, and her new Qi pulls against the Honest Blade's rule of no embellishment.
+- **Power at the start (end of Ch 6, from the chapter log):**
+  - Realm: Body Tempering, Peak; breakthrough pressure "patient and close".
+  - Aspects: 1 of 10 (Honest Blade).
+  - Honest Blade forms: Guiding Bloom **Mastered**; Parting Reed **Can Perform**; Rooted Shore **Can Perform**; Still Water Cuts, Returning Bloom, The Straight Cut, Formless Path **Not Yet**.
+  - Secondary channel: about three full technique sequences before it narrows (the forward pass lasts five or six); half-breath initiation delay, shrinking daily.
+  - Burdens: none.
+- **Power at the end (end of Ch 20):**
+  - Realm: **Qi Gathering, Early** (breakthrough in Ch 10).
+  - Aspects: still 1 of 10 unlocked, with a **first glimpse of the second aspect, the Whispering Edge**, felt once and not yet usable [N5].
+  - Honest Blade forms: Guiding Bloom Mastered; **Parting Reed Reliable** (Ch 11); **Rooted Shore Reliable** (Ch 19, and it breaks on the fourth strike); **Still Water Cuts Can Perform** (Ch 17); the other three Not Yet. Returning Bloom is the obvious next goal (its prerequisite is met).
+  - Secondary channel: five sequences, close to the forward pass and still more efficient; no initiation delay worth naming.
+  - Perception [Q6]: reads the *edges* of imposed Qi structures (the silence domain) and the *weight* a carried Burden puts into a person's Qi. Neither is explained.
+  - Burden: none taken. The Burden question, "what would I carry one for", gets its first real answer (her friends) and a direct offer at the very end [N3].
+- **Midpoint turn (Ch 14):** The "Shifting Wind elder" Chengqi names has been officially away on a long contract for six years, and someone on the mountain has been quietly collecting his stipend. The man in the hollow should not exist. When the proxy turns out to be a trusted friend (Fang Ruochen), the investigation changes from "who is the traitor?" to "what is the sect's own secret, and who is turning it?" [Q4, Q12, N1]
+- **Climax (Chapters 18 and 19, "the listening post"):** A trap set by the Iron Sash at the next meeting in the hollow is itself the weapon. The silence is a **Burden-bound space** whose condition is that no one outside may hear the words spoken inside [Q1, Q5]. The Iron Sash's listening team, set to overhear, would kill the very people they came to protect. Meiying, who can feel the domain's edge, realises this in time and holds the edge shut with Rooted Shore against a forced breach, keeping a stranger alive who is, on paper, her enemy. The proof of how Fang died comes from seeing it nearly done again. The second hand escapes; the item is still missing; Rooted Shore breaks on the fourth strike and she pays for it.
+- **Arc end hook (Ch 20):** The same Iron Sash courier who glanced at her in Ch 1 hands Meiying a sealed letter case. It is from Fang, written the night he moved what he carried, and it asks her the Burden question [Q3, N3].
 
-| Ch | Title / beat | Clues planted & progression | Hook at the end |
+### What the plan assumes (working solution for Arc 1)
+
+This is for the lead writer, not for the reader. None of it is canon until the author decides. The reveals come in stages across the chapters in the table.
+
+- **The sect's secret [Q2-A, Q5-C].** The 112-year-old record in the archive ("a meeting requested and never granted") is a cover. The sect and the eastern highlanders have a sealed arrangement: a **two-part token** (the highlanders' half carries the closed emblem; the sect's half is the open version, like the 80-year-old margin drawing). A **custodian** carries an **External Burden** to keep the sect's half safe and within the mountain. Elder Fang was the custodian, hidden as a theory instructor. The Iron Sash knew (its Burden records) and the arrangement is old. The "Shifting Wind elder" is the sect's long-absent secret envoy.
+- **What went wrong.** The meeting Meiying saw in Ch 3 was **off-schedule** and in the wrong place, in a **silence domain that is really a Burden-bound ritual space** (the highlanders' tradition: the closing words must be spoken unheard; the condition is the silence). Someone had pushed it forward. An Iron Sash intelligence letter (Ch 1) warned Fang that the envoy was early and the elder was moving, so he cut a binding-ink stain from his sleeve, moved the token out of his desk that night (Wen Jiabao saw him, Ch 11) and hid it in a shrine niche outside the walls.
+- **How Fang died [Q1-B].** The letter did **not** break his condition. Days later the second hand, who had learned the hiding place through the watcher, **removed the token from the sect's walls**, which broke the condition (*possession, within the mountain*). The timing was chosen to follow the meeting. Backlash: Qi implosion. This answers Ch 5's problem ("the backlash would have been immediate": no, Meiying's reasoning was wrong).
+- **The second hand's goal.** Break the arrangement, or own it. Left open for Arc 2 [N2]. Three clues point three ways: unreadable Qi (the Hidden path, Shen Wuque), knowledge of the Burden records (inside the Iron Sash), and the power to post a gate guard without Iron Sash approval (a branch head or the Sect Head's office).
+- **Chu Wulong [N1].** Baseline: he knows the old arrangement exists but not that it was being run off-schedule, and the Iron Sash has not told him because the leak may be in his own office. This gives "he has not told her everything" an immediate edge in Ch 20.
+
+### Fair-play rules for this arc
+- Meiying's POV only. She is sometimes wrong (Ch 5's "immediate" theory). Wrong guesses are clues, not cheats.
+- Every solution is checked against the Burden rules already on the page: the *break* triggers backlash (not age); External Burdens fail most often; conditions cannot be renegotiated; severity scales with depth; the Iron Sash keeps records of senior members' Burdens.
+- **Every investigation chapter pays out a visible progression beat** (a form, a sense, a sequence count or a realm), as the genre report advises.
+- No "genius". Results come from hours of work and from being shown something by someone else (the Ch 4 lesson). Each breakthrough needs a piece from a friend or relative: "neither piece alone".
+
+### Timeline (days counted from the morning Fang's body was found, Ch 5 = Day 0)
+- Day 1: Ch 6, then Ch 7 that night.
+- Days 2 to 4: Ch 8 to 10. Days 5 to 8: Ch 11 to 14. Days 9 to 11: Ch 15 and 16. Days 12 to 14: Ch 17.
+- Night of Day 15: Ch 18 and 19 (the new moon, when the renewal is due). Days 16 to 18: Ch 20.
+- The appointment of Fang's replacement falls about Day 21 (Ch 6: "within the month"). It is the arc's visible clock from Ch 15.
+- This ignores the bible's Conflict 9 (the "two days ago" and "two weeks ago" lines). A light line in Ch 12 or Ch 13 can fix the day Fang died (the physician puts it the night before he was found) [bible Q8].
+
+### Chapter plan
+
+| Ch | Working title and main beat | Progression | Ending hook |
 |---|---|---|---|
-| 1 | **The Line No One Drew.** Day 1. Open mid-lecture: Elder Fang shows the outer disciples a live practice array and challenges them to find its error. Nobody can. Meiying can see it: a line that isn't there. She points at empty air. Fang is intrigued and needles her, asks her name ("Plum shadow. Hm. Apt."), and "punishes" her with copying his annotated Formation Primer. After class, Steward Pei kindly delivers the bad news: thirty-seven days to Layer 5 or she goes home. Introduce Suyin and Chengqi at the evening meal, in motion: banter, Suyin's alchemy worries, Chengqi's sword drills. | Fang's qi has a **snag at the left knee**. Fang mentions the Cloud Veil's **nine nodes** ("you will never see one"). Chengqi's grandfather says the **cloud sea used to sit higher**. **Pei folds paper cranes** as he talks. Establish: Meiying sees the Cloud Gathering Method as "wrong" for her. | Fang stops her at the door: come to the Formation Hall in three days, and "whatever you're doing with your eyes, girl, stop doing it where people can see." Someone has noticed her secret. |
-| 2 | **Frost-Dew Orchid.** Day 2. Training on Sword Cliff. Meiying fails a circulation drill again, and the qi deviation risk is shown in someone else (a disciple carried to the Medicine Hall). Suyin admits she needs a frost-dew orchid for her alchemy assessment pill; it grows only in the forbidden Old Plum Grove, and tonight is the last frost-bloom night. Han Zhuo appears briefly: cool, top of the cohort. Chengqi refuses to break curfew, then comes along "so you two don't die stupidly." They sneak out at night through the north slope. | Suyin says the Medicine Hall has seen **three deviations this month**, more than usual. Rule shown: concealment arrays block spiritual sense both ways (Fang's lecture, recalled). Meiying uses her sight to find a safe path past the patrol. | In the grove, while Suyin cuts the orchid, Meiying sees lines of light running between the ancient plum trees: an invisible dome. Inside it, voices. |
-| 3 | **The Seam.** Night of Day 2. Meiying finds a seam in the concealment array; through it the trio see and hear a hooded Jianyun elder (voice disguised with qi) and a veiled outsider. Ambiguous, sinister dialogue: "The Seventh is ready?" / "Before the plum blossoms open, Elder. The tide won't wait for your conscience." / "And the disciples?" / "Will not feel a thing. Not this year." The outsider sets a bronze token bearing the **emblem** on a stone. Chengqi's sash catches a plum branch, which is an array anchor, and the dome ripples. Outsider: "We are not alone." Elder: "Deer. The grove is full of them." They run. | The elder's qi **snags somewhere low on the left**. The outsider's qi is **creased like folded paper**, cold. The emblem (circle, square, triangle, one line through all) glows as a working formation in her sight. "The Seventh." "Before the plum blossoms open." | Back in the dormitory, Chengqi finds a strip torn from his sash. It carries the third-year cohort's embroidered cloud. Whoever finds it will know it came from one of forty disciples. |
-| 4 | **After Curfew.** Day 3. Pei announces a curfew inquiry: a sash strip was found "near the north wall." The trio argue. Chengqi wants to report what they saw to the Discipline Hall; Meiying refuses, because the elder could *be* Discipline. They agree to silence. At dawn Meiying sees Elder Gu coming down the north path with agitated qi. A notice: Elder Fang has entered closed-door seclusion. Meiying, rattled, tries circulating her own way and gets a flicker of progress before Suyin stops her ("You'll deviate, Squint"). Day 4: Meiying goes to her appointment at the Formation Hall. | Red herring: **Gu on the north path at dawn**. Pei is kind and concerned; he hands out cranes. A first hint that following her sight could work for her cultivation. | The Formation Hall gates are sealed with white mourning cloth. Elder Fang is dead. |
-| 5 | **Qi Deviation.** Days 4 to 5. The official cause is qi deviation during seclusion, confirmed by Elder Wen; cremation at dawn on Day 6, as custom requires for deviation deaths. Gu seals Fang's chamber immediately. Meiying refuses to accept it: Fang told her to come in three days; he wasn't planning a breakthrough. The trio wonder whether the meeting elder killed Fang because Fang knew something. Suyin, as Wen's apprentice, is helping prepare the body, and she smuggles Meiying in as an assistant the night before cremation. | **Wen urges quick cremation** (long-game clue). **Gu seals the chamber fast** (looks suspicious; it actually preserves evidence). Pei to Meiying: "I heard the old man liked you." | Over the body, Meiying sees it: creased, folded qi threaded through Fang's meridians, the same texture as the outsider's. "He didn't deviate. Someone killed him." |
-| 6 | **Margins.** Day 6. The cremation. Grief, shown through action: Meiying copies Fang's primer by lamplight because he told her to. His margin notes are funny, rude and wise: "Don't follow the diagram. Follow the flow the diagram is trying to describe." She applies it to her own cultivation, risks it with Suyin furious and watching, and **breaks through to Layer 4**. Black sweat, a rush of cold clarity; she can now see her own meridians as faint shadows. | **Breakthrough: Layer 4.** First conscious reading of a shadow (her own). Rule: shadows fade; the creased residue in Fang's body will last about a week. Chengqi works out that they have until about Day 9 or 10 to see the chamber. | She returns from the baths to find her room has been searched. Nothing is taken, but the primer has been moved, and on her pillow the faint residue of lukewarm, smooth qi is already fading. |
-| 7 | **The Sealed Chamber.** Days 7 to 8. Plan to get into Fang's sealed seclusion chamber. Chengqi "borrows" his uncle's patrol schedule (a real moral cost for him). Meiying finds a seam in the Discipline seal. Inside: she reads the chamber's array and sees a **scar** where an extra line was drawn in and then vanished. Traced, the scar forms the emblem. The smoke-line method: the incense did it. One **unburned incense stick** remains in the box; its qi is faintly creased. She pockets it without fully understanding why it feels wrong. | The **emblem in the scar**. **Incense** as the murder weapon. Under the creases, the stick's hidden inscription carries a second faint signature, "like a song heard through a wall": smooth and lukewarm. It is Pei's, because he inscribed the sticks, but she can't place it yet. Fang's own last shadows: he knelt by the array plate and did something there. | Footsteps outside. Someone else is breaking into the sealed chamber. |
-| 8 | **Two Lamps.** Night of Day 8. Elder Gu enters with a lamp. The trio hide. Gu searches, muttering: "What did you do, old Fang? What did you *do*?" They read this as Gu covering his tracks. While Gu searches the far wall, Meiying follows Fang's last shadow to the array plate and finds a qi pocket she can see and Gu can't. Inside: a **sealed letter**. Chengqi creates a diversion; they escape by a hair. | Gu is looking for something (he suspects Fang). The letter carries a plum blossom drawn with **one petal left as a gap**. Its seal is a formation lock: open it wrong and it burns. | In the dormitory, under the lamp, Meiying realises the plum sketch was meant for her. Fang knew who would find it. |
-| 9 | **The Lock.** Days 9 to 10. Breather chapter that still moves the plot. The trio argue about the letter: Suyin wants to take it to the Sect Master (in seclusion, unreachable), Chengqi to the Discipline Hall, and Meiying trusts no one. They compromise: Meiying studies the lock. A letter from home: her brother's drawing, her father's bad back. (Homesickness and stakes.) Han Zhuo catches the trio returning at dawn from their latest outing; a tense, honest exchange. He won't report them, but he'll remember. | The lock is beyond her (it will take weeks). Han trains alone at night (sets up Pei's later frame). Suyin mentions more deviations; the Medicine Hall is stretched. | Pei announces that the third-year cohort's sashes will be inspected the day after tomorrow. Chengqi's sash is the torn one. |
-| 10 | **The Snag.** Days 11 to 12. Chengqi's solution, which is a character turn: during a public spar with Han Zhuo he lets his sash be "torn" in front of witnesses. Han notices it was deliberate and says nothing. The inspection passes. Later, at Fang's memorial in the Formation Hall, Meiying touches his old pipe and feels his imprint vividly: rough hemp rope, warm, **snagging at the left knee**. Exactly like the hooded elder's. | **Midpoint reveal: the elder at the meeting was Fang.** Recontextualise: "Deer." He was protecting them. Han now owes nothing but knows something. | Meiying, to her friends: "The man we thought was the traitor is the one they killed. Which means the killer is someone we haven't even looked at, and he's still here." |
-| 11 | **The Steward's Ledger.** Days 13 to 20. New questions: who could let an outsider through the Cloud Veil, and who handled Fang's seclusion supplies? Suyin's gossip network: Pei personally delivered Fang's incense. Chengqi's records: the page of the stores ledger recording Fang's seclusion supplies is missing. Meiying visits the Steward's Office to register for the assessment and sees the faint creases at Pei's fingertips and on his paper cranes. Pei's slip: "Did the old man leave you anything? A note, maybe? He was fond of notes." | **Pei:** creased fingertips, delivered the incense, missing ledger page, and the "note" slip (nobody said anything about a note). Up close, his signature is the smooth, lukewarm "song through a wall" from the incense stick and her pillow; she can now place it, but only she can see it. Wen thread: see hook. | Suyin comes back pale from the Medicine Hall. Elder Wen asked whether any of her friends were out after curfew the night before Fang died, and asked about Meiying by name. Suyin lied to her own master. |
-| 12 | **Shadow-Reading.** Days 20 to 33. Progression chapter. Meiying trains her sight deliberately: Chengqi performs sword forms and she reconstructs them an hour later from the shadows; Suyin times the fading. Costs shown: headaches, then nosebleeds. The big problem: nobody else can see her evidence, and a Layer 4 girl's invisible clues won't convict a thirty-year steward. Meanwhile, her cultivation climbs toward Layer 5 but won't break. | Rules on the page: fading times, imprints, scars, **whiteout**. The Thinning glimpsed: she notices the Cloud Veil's lines are thinner on one side than another. | She pushes too far, whites out, and collapses. She wakes in the Medicine Hall with Elder Wen at her bedside: "Your meridians are doing something I have never seen, child. Tell me what you have been practising." |
-| 13 | **The Orchid Pill.** Days 34 to 37. Meiying deflects Wen by blaming a modified circulation, which is a half-truth; Wen warns her gently and lets her go. Was that kindness or a lie? The assessment is days away and she is still at Layer 4. Suyin has finished her alchemy pill with the frost-dew orchid from Ch 2 and gives Meiying the second one. Chengqi guards the door. Meiying combines shadow-reading with her own circulation, watching her blockage from the inside, and **breaks through to Layer 5** the night before the delegation arrives. | **Breakthrough: Layer 5.** Payoff of the Ch 2 orchid. **Wen has now seen her unusual meridians** (long-game clue). | Morning: a delegation from the Heavenly Ledger Pavilion arrives to observe the assessment. Among them is a quiet scholar in grey whose qi she cannot see at all. Where his qi should be there is nothing, like a hole cut in the world. |
-| 14 | **The Winter Assessment.** Day 38. Set piece. Testing Stele: she registers Layer 5, barely, to Pei's warm congratulations. Sparring demonstration against Han Zhuo (Layer 7). She must hide her sight, so she uses it only to read his qi gathering a breath before each strike and passes it off as instinct. She loses on points but lands the only touch anyone lands on Han all day. Han: "You saw that coming. How?" Suyin passes alchemy with honours; Chengqi takes the top sword mark. | She **stays in the sect.** Scholar Xie watches only her. | Passing her in the crowd, Scholar Xie says pleasantly: "Good footwork. You always look a fraction to the left of your opponent, as if watching something that isn't there yet." |
-| 15 | **The Guest.** Day 39. They investigate Xie: the delegation is staying "for the plum festival". The plum buds on the north slope are swelling, and the deadline clicks into place. Suyin learns that Pei arranged the delegation's lodging beside the north slope. They decide they must go to someone and choose Elder Gu, on Chengqi's argument that Gu was *searching* the chamber, not cleaning it. That evening they go to the Discipline Hall. | **"Before the plum blossoms open"** now has a date: days away. Pei is connected to Xie through the lodging. Chengqi's reasoning about Gu is shown, so the reader can weigh it. | Pei is already there, presenting Gu with a culprit: Han Zhuo, who "was seen on the north path that night" and has no alibi. Han faces expulsion and interrogation over Fang's death. The trio could stay silent and safe. |
-| 16 | **Confession.** Days 39 to 40. Meiying steps forward: the three of them were out that night, not Han. This clears Han and exposes the trio to Pei. Alone with Gu afterwards they tell him part of the truth (the meeting, that it was Fang, the murder method). Gu reveals that he suspected Fang and was investigating him. He believes them more than he lets on, but he cannot accuse a thirty-year steward and a guest of an allied sect on evidence only one girl can see, and the Sect Master is in seclusion. He confines them to their dormitory "for your safety", with Chengqi's uncle on guard. "Bring me something I can hold in my hand." | **Gu cleared.** Han now owes them. Pei now knows exactly who the witnesses are. The incense stick is still in Meiying's things; she hasn't yet realised it can be held in a hand. | Confined and sleepless, Meiying tries the lock one more time and finally sees how it is built. The seal opens. First line: "If you are reading this, I am dead, and the girl who sees the folds has more sense than I gave her credit for." |
-| 17 | **Fang's Letter.** Day 41. The letter, in Fang's voice (dry, rude, devastating). The Thinning: Jianyun's vein is dying, and the Sect Master knows. The Measure, the emblem's meaning, and the nine anchors, of which Jianyun's Seventh Node is one. The plum tide is the only moment the conversion can be completed. Fang built a flaw at the third joint from the north: pull the jade nail as the tide runs and it flows back into the Veil, and every array on the mountain will scream. "I opened the Veil for him that night, but someone inside brought him to me, and has been opening doors for him far longer than I have. I could not learn who. Not Gu. He is too stupid to be a traitor, bless him." Meiying remembers the incense stick. They split it: the emblem's line is inscribed in its core. Physical proof. | **Reveals:** the Thinning, the Measure, the emblem, the anchors, the plum tide, the flaw. **Proof:** the incense stick. The Sect Master's silence. | Through the dormitory window, the first plum blossoms on the north slope are opening. It's tonight. |
-| 18 | **The Night the Plums Open.** Night of Day 41. They break confinement (Chengqi has to get past his own uncle). They split up: Chengqi runs the split incense stick to Gu on Cloudpierce Peak; Meiying and Suyin go to the grove, because only Meiying can find the joint and the tide won't wait. Meiying finds the seam again (a callback to Ch 3). Inside, Pei guards while the outsider works the node. Suyin's diversion. Meiying reaches the third joint but Pei catches her. | Tide timing: moonrise. The node's lines are visible to her. The flaw is there, exactly where Fang said. | The outsider lifts his veil: Scholar Xie. "Ah. The little shadow." |
-| 19 | **The Missing Line.** Climax. She can't fight a Core Formation Peak cultivator, so she talks. She tells Xie she knows about the Thinning, and he is genuinely interested (he wants her, not her death). Suyin's medicine trick frees her from Pei for a moment. As the tide surges, Meiying pulls the jade nail. The tide floods back through the node and through her; she survives by following the flow, as Fang taught. She **breaks through to Layer 6** and pays for it with a severe whiteout. The Cloud Veil screams across the mountain. Xie weighs killing her against escaping the whole sect, chooses to fold away through a seam, and says: "You've cost us a year. Perhaps you'll be worth it." Gu arrives with Chengqi and elders. Pei is captured. As he begins to say "The other one is—", the emblem burns into his chest and he dies. | **Breakthrough: Layer 6** (earned in the crisis). Cost: whiteout lasting days. Possible permanent mark (see Open questions). The silencing restriction is shown. A second traitor confirmed. | Darkness. Meiying can't see anything at all, with either kind of sight. |
-| 20 | **What Remains.** Days 42 onward. Consequences and rewards. The Sect Master emerges from seclusion. Official story: Steward Pei, an agent of demonic cultivators, was caught sabotaging the Veil, and brave disciples helped. The Thinning stays secret. The trio swear heart-demon oaths of secrecy. Private meeting with the Sect Master, who admits he knew. Rewards: Meiying becomes an apprentice of the Formation Hall ("Fang's last student") with inner-disciple privileges; Chengqi is offered a junior Discipline post by Gu; Suyin is recognised by the Medicine Hall; Han Zhuo gives grudging thanks. Gu gives Meiying Fang's pipe. A letter home: she's staying. Her sight returns slowly. | The Sect Master's culpability. New status for all three. Xie's delegation left in the chaos; the Pavilion "knew nothing". | Elder Wen tends Meiying's eyes. As her sight returns, the first thing it shows her is a faint crease of folded qi on Wen's fingertips. Wen examined Pei's body this morning, so it means nothing. Probably. Suyin laughs in the doorway, and Meiying says nothing. |
+| 7 | **The Right Thing.** Evening of Ch 6, Suyin's room. Suyin lays out what she found: the emblem's construction (closed, interlocking, angular) matches the "closed-figure" binding seals described in an old Burden-contract text in her collection, so the outsider may be wearing a **binding mark, not a crest** [Q5]. Her careful "right thing" test costs her something: confirming it means asking her sister about her own contract (the sister stays offstage, unnamed) [N6]. Chengqi's certainty has not changed and he still will not say the name. The trio argue over how to approach Rou: Suyin warns that Rou is either ignorant or complicit. Meiying decides to tell Rou about the meeting but **hold the seal finding back**, which is uncomfortable for someone whose blade is "nothing added, nothing withheld". *Fallback if Q5 is rejected:* the finding is a house crest in a merchant ledger and the binding angle is dropped. | Channel initiation delay down to a fraction of a breath (late-night practice) | A courier at the family gate at dawn: Head Rou wants Chu Meiying in her receiving room now. Meiying had not yet decided when to go. |
+| 8 | **Pleasantries.** The Iron Sash receiving room. Rou opens with small talk, and Meiying realises the interview began before she sat. Rou already knows about her archive search (Fang Ruochen's watching, Ch 4) and that three students left and returned through the outer gate. Meiying tells the truth about the meeting but not the seal finding or Chengqi's name. She tries to read Rou with the Honest Blade and fails: a Core Formation cultivator announces nothing, except one place where her Qi is held tight [Q6, a hint only]. Rou neither confirms nor denies that Fang's Burden was in her records ("Elder Fang's affairs are closed to students") [Q2]. She asks Meiying to say nothing to her father "until I say". Meiying will not promise and says so. Each leaves with one thing: Rou has the meeting; Meiying has a way of reading how Rou did not answer. | None. The reward is information and a first reading attempt that fails. | Rou, as Meiying leaves: the new gatekeeper at the outer gate was **not posted by the Iron Sash**. Someone else has been watching the gate and has seen their faces. |
+| 9 | **The Family Table.** Breather, and the first on-page Chu family. Dinner with Chu Wulong, Chu Yanmei and the siblings. The succession tension shows in one exchange (Tianlong and Bairen sniping, Lifen steering). **Wanru is named on the page as Meiying's sister** (bible Conflict 15). The father says one dry thing about Fang ("He was a careful man") and Meiying watches how he says it. Her mother notices her tiredness and asks nothing, which is the tell. Afterwards in the courtyard Bairen spars with her: fire pressure exposes the channel's durability gap, and she finds a rhythm of listening between sequences. Bairen says he will burn whatever is bothering her down if she says the word. She says nothing, her first lie to someone she trusts completely. Night: the boundary she has been leaning on for weeks moves. | Channel durability **3 to 4 sequences** (the rhythm of listening between them) | The pressure at the boundary of her cultivation shifts from "patient" to "open": the breakthrough has begun, tonight, with no warning and no one in the room. |
+| 10 | **Nothing Withheld.** The breakthrough in the indoor training hall. Her Qi surges, her warm Qi flares, and she nearly deviates (Chu Wulong's father died mid-breakthrough, Vol II). Listening is not enough this time. The knot is divided intent: she has been lying and withholding, even to herself. Intent decides whether Qi holds together (Ch 1). She names what she is afraid for (Suyin and Chengqi), and the knot opens. This is the first honest answer to "what would I carry one for". She reaches **Qi Gathering, Early**. Cost: heat, shaking hands, a day's weakness, and a new problem: her Qi now reaches the surface and spills into everything, and the Honest Blade forbids embellishment [Q14, see N4]. At dawn a practice staff leans against the outer pillar; someone sat there all night. | **Body Tempering Peak to Qi Gathering, Early.** First Qi sense at a distance. | Her new sense picks up a steady, quiet Qi signature outside the compound wall, in the same spot, all night. Someone has been standing at her gate since before she began. |
+| 11 | **Barely, Twice.** Combat class, three days later. In a scene beforehand the trio's two pieces solve Parting Reed against a rooted opponent: Chengqi ("decline to be where they expect") and Suyin ("a rooted man is a fixed point; he cannot turn"). The answer is to **go around, not through**. The Han Jingwei rematch tests it, and she must keep her new Qi down to stay honest. Han adapts mid-fight and lands his own strike, so Elder Deng Suhua rules "Both dead". Afterwards Han says her name for the first time, and nothing else. Wen Jiabao approaches stiffly. He has drilled his right shoulder for two weeks, asks if it is fixed, and (Ch 1's honesty pays off) gives a clue: the night of the spar, Fang crossed the Flame Herald path carrying a **cloth-wrapped bundle**, going *out* toward the outer wall [Q2]. | **Parting Reed to Reliable** | Meiying decides: they will follow Fang's route tonight, before the watcher can. |
+| 12 | **Edges.** The trio trace the route at night, down the service stair and out to an old gate-shrine on the slope where outer disciples leave offerings. In a niche: **empty**, with a scar of binding ink and the faint feel of a closed-figure seal. Meiying's new sense reads the scar. The watcher arrives. A silence sweeps up the slope toward them and Meiying feels its **edge** (as she noticed from the ridge in Ch 3). She leads Chengqi and Suyin through the seam in it, aided by Chengqi's unpredictable footwork and Suyin's knowledge of the slope's herb paths. They get away; the watcher's Qi has a quiet, finished quality. Cost: Suyin twists an ankle, and they have been seen. | Perception: first read of an imposed Qi structure's edge [Q6] | Scratched on the niche's inside wall, in Fang's hand: a single name, "Cailan". |
+| 13 | **The Class That Was Moved.** Shen Cailan in her empty classroom. Fang had **asked** her to bring the class forward a year, and never said why; she burned the note he sent her as he asked. She will not tell them what he carried but teaches Suyin (and, through her, the others) to read a Burden's *kind* from what it leaves: this was a **custodial External Burden** (a condition of keeping something safe and within the mountain). A custodial condition cannot be renegotiated and breaks when the thing leaves or is opened, which means **the letter could not have broken it**. Meiying's mistake from Ch 5 is corrected [Q1]. Meiying perceives the **weight** in Shen Cailan's Qi: she carries something too [Q6]. Shen Cailan refuses again to answer what a broken Burden does at Core Formation or above, and warns them to stop. | Perception: feels a Burden's weight in another person [Q6] | Chengqi says the name aloud at last: a Shifting Wind elder, in front of Shen Cailan. |
+| 14 | **Six Years.** *Midpoint.* The name is [placeholder: Elder Y, to be chosen by the author] [Q4]. Chengqi has known of him all his life but never met him: he has been away on a long contract for six years, according to the branch roll. That is why Chengqi failed to recognise him at the time. Chengqi's cost: he asks questions within his branch, is warned off by a senior, and has to choose between his branch and the truth. Meiying talks with Wanru, who says only: "If you want to know whether a man is where his roll says he is, don't ask the roll. Ask who signs for his stipend" [Wanru's purpose, N7]. Yun Baihe (amused, unreadable) has a cameo that can be read either way. From the training ground Shen Wuque watches Meiying, and she cannot read his Qi at all [Q5, Q6]. Through Suyin's Iron Vow supply clerks they learn the stipend has been collected every quarter by someone on the mountain. | None (a breather on the progression side; the tension is political) | The collector's signature: **Fang Ruochen**, the archivist who has helped her for three years. |
+| 15 | **Misfiled.** Meiying walks into the archive not knowing if she is facing an enemy. Fang Ruochen explains: he was asked by Fang, and by the Iron Sash, to keep the envoy's absence in order. The "112-year record" was filed wrongly *on purpose*; the truth is in a locked drawer: **the meeting was granted, in secret**, and what was sealed there is why the sect has a custodian. The filing errors he quietly fixed for her over the years were him keeping her close to the truth without breaking his own rule. He may be Elder Fang's relative [Q12]. The Iron Sash's records of Burdens did hold Fang's, which answers Suyin's fork from Ch 5: **the Iron Sash knew from the start** [Q2]. Rou's earlier silence takes on a new meaning (she was protecting something, and also hiding it). He does not know where the token is. The vacant post carries the custody with it: whoever fills it receives the sect's half. The renewal is due at the new moon, and the appointment is days from it. | None (the progression beat is Meiying matching the 80-year drawing to the open half of the token) | The sect's half of the token is **missing**, and whoever sits in Fang's chair when the new moon comes will be handed an arrangement with nothing to hold it. Six days. |
+| 16 | **What the Iron Sash Needs.** Meiying brings Rou everything (the binding-seal finding, the niche, the stipend, the archive), and the trio argue first. Suyin fears Rou is a risk; Chengqi is angry that his branch is part of it; Meiying chooses honesty and trusts Rou, with conditions. Rou's price: she needs ears. The next renewal is to be held in the hollow, and the domain has always kept the Iron Sash out. A listening team on the ridge can hear nothing from outside. She needs students whose Qi will not trip the domain, **who felt its edge before**, to place and read the listening post. Rou asks Meiying to tell her father only afterwards [N1]. Meiying's honesty is paid for: she agrees to withhold again. Cost: she has to lie to Bairen once more. | None | Three nights. Rou: "If it goes wrong, you were never there." Meiying: "Yes, I was." |
+| 17 | **Three Nights.** Preparation. Shen Qiuyue, the interim head of her own branch and a figure Meiying has never really spoken to, takes her in hand. First she tells Meiying everything she knows about the first three aspects, and nothing about the rest: nobody knows. Her lesson is on Still Water Cuts (the fourth form), whose barrier was never calm but **continuous Qi threading**, which Qi Gathering now lets her try. She practises it under Bairen's pressure, with Suyin planning the Burden logic of the domain and Chengqi mapping the slope. Han Jingwei notices the trio missing from class and says nothing to anyone, a small mark that he watches more than he shows. | **Still Water Cuts to Can Perform**; channel to five sequences | A courier at night: the renewal has moved up from three nights to **tonight**. Rou's team is not in place. |
+| 18 | **The Listening Post.** Climax, part one. The trio go early, with a skeleton team. The silence closes around the hollow, and the **edge** is where Meiying feels it. Through the seam Suyin sees something nobody else would: a Burden-bound space has a *condition*, and the condition here is that **no one outside may hear** [Q1, Q5]. The listening post is aimed straight at it. Meiying understands that Rou's ears are the weapon and that the second hand (or his watcher) has arranged for them to be used; if the team hears, the envoy and the elder die as Fang did. The unreadable figure is there: a Qi that announces nothing. | None | "If anyone hears, they die." Meiying realises it with the first sound coming through the edge. |
+| 19 | **Rooted.** Climax, part two. A forced breach hits the edge from outside. Meiying crosses the hollow faster than anyone processes her draw (the first **glimpse of the Whispering Edge**), plants against the edge and holds it with **Rooted Shore**: take the force and become what it cannot move. Defensive Qi anchors; the Qi has to be in place before contact. It holds the first, second and third strikes, which is the Ch 4 limit, and this time holds longer because the channel can carry it. It breaks on the **fourth**. She is shielding the very people the sect would call the enemy. Suyin and Chengqi hold the ridge, and Chengqi's unpredictable staff ends the watcher's run. The envoy and the elder live. The token is not recovered; the unreadable figure goes. Meiying collapses, and the collapse is worse than if she had moved. | **Rooted Shore to Reliable**; first sign of the second aspect | The unreadable figure on the rim lifts one hand, not in threat. As she goes dark, Meiying sees it is a salute. |
+| 20 | **What Was Carried.** Breather and consequences. Meiying recovers (ribs, a strained channel, days in bed). Rou reports in part: the elder and the envoy are in Iron Sash custody; the watcher will not speak; the posting order for the gate bore a seal that only someone with Iron Sash access could use. The leak is inside the Iron Sash [N2]. The trio's costs: Suyin's sister, Chengqi's branch, Meiying's lie to Bairen. Chu Wulong comes to her bedside for the first time. He does not say "genius". He says one true thing about Fang and one promise: when she reaches Foundation Establishment, they will speak about her constellation. Shen Qiuyue hears about the glimpse and names it: the Whispering Edge. She says nothing about what comes after. Pei Lingzhu visits her mother, and Meiying sees Pei looking at her. | Recovery; the glimpse of the Whispering Edge is named by Shen Qiuyue [N5] | The senior Iron Sash courier from Ch 1, who glanced at her "deliberately", brings a sealed letter case to her bedside. It is from Fang. |
 
-### Fair-play clue tracker (Arc 1)
+**Pacing note (Ch 7 to 10).** Each chapter ends on a different kind of hook: a summons, a threat, a physical event, then a threat to her safety. The reader gets a visible win by Ch 9 (the channel), the first realm by Ch 10, and a form milestone in Ch 11. None needs the author's open answers beyond the soft dependencies tagged above.
 
-Every answer in Arc 1 can be worked out by an attentive reader before the characters say it.
+**Tension and release.** Ch 7 to 8 rising talk; Ch 9 breather; Ch 10 internal peak; Ch 11 combat; Ch 12 set-piece; Ch 13 and 14 revelation; Ch 15 and 16 pressure and decision; Ch 17 preparation; Ch 18 and 19 climax; Ch 20 release.
 
-| Answer | Clue | Planted | Reinforced | Revealed |
+---
+
+## Meiying's progression milestones (Arc 1)
+
+| Chapter | What changes |
+|---|---|
+| 7 | Channel initiation delay almost gone |
+| 9 | Channel holds **4** sequences (from 3) |
+| 10 | **Qi Gathering, Early.** Qi now reaches the surface; she must learn restraint |
+| 11 | **Parting Reed: Can Perform to Reliable** (go around a rooted opponent) |
+| 12 to 13 | Perception grows: the edge of imposed Qi; the weight of a carried Burden [Q6] |
+| 17 | **Still Water Cuts: Not Yet to Can Perform**; channel holds **5** sequences |
+| 19 | **Rooted Shore: Can Perform to Reliable** (breaks on the fourth strike); first glimpse of the Whispering Edge |
+| End | Qi Gathering, Early; 1 of 10 aspects unlocked plus a glimpse of the 2nd; forms: Guiding Bloom Mastered, Parting Reed Reliable, Rooted Shore Reliable, Still Water Cuts Can Perform, others Not Yet; no Burden |
+
+**Realism check.** Two forms rise to Reliable and one to Can Perform over about 18 in-story days. If that feels fast, drop Rooted Shore's rank to "Can Perform, with a higher threshold" and keep the rest.
+
+---
+
+## Clue and reveal tracker
+
+Planted in Ch 1 to 6, then planned. "Working answer" assumes the recommendations in the story bible and may change.
+
+| Clue | Planted | Working answer | Pays off | Depends on |
 |---|---|---|---|---|
-| The meeting elder was Fang | Qi snag at the left knee | Ch 1 | Ch 3 (elder snags "low on the left"), Ch 5 (Fang's body) | Ch 10 |
-| Fang protected the trio | "Deer. The grove is full of them." | Ch 3 | Ch 8 (the letter's plum sketch) | Ch 10, Ch 17 |
-| It was murder | Creased qi in Fang's meridians | Ch 5 | Ch 7 | Ch 5 (suspected), Ch 17 (proven) |
-| Method: incense smoke-line | The scar traces the emblem; one unburned stick has creased qi | Ch 7 | Ch 11 (Pei delivered the incense) | Ch 17 |
-| The killer is Pei | Paper cranes and folding; creased fingertips; delivered the incense; missing ledger page; the "note" slip; lukewarm residue on Meiying's pillow (Ch 6) and inside the incense stick's inscription (Ch 7); arranges Xie's lodging; frames Han | Ch 1 | Ch 4, 6, 7, 11, 15 | Ch 18 to 19 |
-| Gu is innocent | He searches rather than cleans; his anger at Fang is personal history | Ch 4 | Ch 8 | Ch 16 |
-| The outsider is Xie | Creased qi at the meeting; a blank at full fold; Pavilion delegation "for the plum festival" | Ch 3 | Ch 13, 14, 15 | Ch 18 |
-| The deadline is plum night | "Before the plum blossoms open"; plum buds swelling | Ch 3 | Ch 15 | Ch 17 |
-| The Thinning | Lower cloud sea; rising deviations; thinner Veil lines | Ch 1, 2 | Ch 9, 12 | Ch 17 |
-| A second traitor exists (Wen) | Urges cremation; asks about curfew breakers; sees Meiying's meridians shortly before Xie singles her out; creases on her fingers | Ch 5 | Ch 11, 12, 13, 14, 20 | End of Arc 2 |
+| Fang's left sleeve cut short in a hurry | Ch 1 | He cut away a binding-ink stain after handling the token | Ch 12 (scar in the niche), Ch 13 | Q2 |
+| Sealed letter by an Iron Sash courier; the courier glances at Meiying deliberately | Ch 1 | Intelligence warning from the Iron Sash that the envoy was early. The courier is later asked to deliver Fang's posthumous letter to her | Ch 8 (hint), Ch 20 | Q3, N3 |
+| Fang treats her like everyone else; "Correct" and moves on | Ch 1 | Character; his posthumous letter is the one exception | Ch 20 | N3 |
+| Burden class moved a year forward | Ch 1, Ch 2 | Fang asked for it | Ch 13 | Q2 |
+| Burden rules: condition cannot be renegotiated; External fails most often; the break, not age, triggers backlash | Ch 2 | These are how the murder works | Ch 13, Ch 18 | Q1 |
+| Shen Cailan withholds what a catastrophic break at Core Formation or above does to constellation progress | Ch 2 | **Not paid in Arc 1.** Re-confirmed as withheld in Ch 13; saved for Arc 2 | Arc 2 | none |
+| Suyin's sister took a Burden "without enough information" | Ch 2 | Possibly the source of Suyin's seal text | Ch 7, Arc 2 | N6 |
+| Silence with edges; birds silent | Ch 3 | A Burden-bound ritual space, not a technique | Ch 12, Ch 18 to 19 | Q5 |
+| Shifting Wind elder: made robes, Chengqi did not recognise him | Ch 3 | A real elder, officially away six years | Ch 13 to 14 | Q4 |
+| Closed, interlocking angular emblem | Ch 3 | The closed half of a two-part token; a binding seal | Ch 7, Ch 15 | Q5 |
+| New gatekeeper, black robes, no trim; shelter newly repaired; "Good haul?" | Ch 3 | The watcher, posted by someone with access to Iron Sash seals | Ch 8, 10, 12, 19, 20 | N2 |
+| Archive: 40-year delegation, 80-year margin drawing, 112-year "meeting never granted" | Ch 4 | The drawing is the open half; the 112-year record was misfiled on purpose | Ch 15 | Q5 |
+| Fang Ruochen knows what she reads; fixes her filing errors | Ch 4 | He has been looking after her and reporting to Rou | Ch 8, Ch 14 to 15 | Q12 |
+| Wanru's look of "confirmation of something she had expected to take longer" | Ch 4 | She knew about the secondary channel and is protective | Ch 10 (staff at the pillar), Ch 14 | N7 |
+| Her mother walks past without stopping | Ch 4 | She saw and chose not to ask | Ch 9 | none |
+| Father: strength comes from the self | Ch 4 | He is wrong, or incomplete | Ch 20 | N1 |
+| "The backlash would have been immediate" (Meiying's guess) | Ch 5 | Wrong: the letter did not break it; removal did | Ch 13 | Q1 |
+| Suyin's fork: Burden in the records or not | Ch 5 | In the records. The Iron Sash knew | Ch 15 | Q2 |
+| Chengqi's unspoken name | Ch 5 | Real elder, away six years | Ch 13 to 14 | Q4 |
+| Iron Sash handles letter, archivist and body | Ch 1, 4, 5 | The leak is inside the Iron Sash | Ch 16, Ch 20 | N2 |
+| Suyin "found something"; "tonight I will know" | Ch 6 | Seal construction in a Burden-contract text | Ch 7 | Q5 |
+| Han Jingwei sees only "the Sect Head's daughter" | Ch 6 | He says her name after the rematch and does not become friendly | Ch 11 | none |
+| Wen Jiabao's reaction to the advice | Ch 1 | He drilled his shoulder and returns with a clue | Ch 11 | none |
 
-### Power and inventory checkpoints (Arc 1)
-- **Start (Ch 1):** Qi Gathering Layer 3. Iron practice sword, two sets of grey outer-disciple robes with the blue third-year sash, jade identity token, 3 low-grade spirit stones, 41 contribution points, 2 silver taels, father's ink-line reel (keepsake).
-- **Ch 1:** gains Fang's annotated Formation Primer.
-- **Ch 6:** Layer 4.
-- **Ch 7:** gains the unburned incense stick.
-- **Ch 8:** gains Fang's sealed letter.
-- **Ch 13:** Layer 5; uses one Frost-Dew Clarity Pill (from Suyin).
-- **Ch 17:** incense stick split (handed to Gu in Ch 18).
-- **Ch 19:** Layer 6; severe whiteout.
-- **Ch 20:** gains Fang's pipe; Formation Hall apprentice status.
-
----
-
-## Arc 2: The Second Hand (rough)
-
-(Plan this loosely. Serials change as you write, so keep later arcs rough.)
-
-- **Shape:** About 30 to 40 chapters. Meiying as a Formation Hall apprentice under a new acting master (Fang's former senior disciple; new character). She learns real formation craft, finally with teachers.
-- **Progression goal:** Layer 6 → Qi Gathering Peak → **Foundation Building** at the arc's end, with a failed first attempt along the way.
-- **Mystery:** Who is the second hand? Suspects include Wen, the new acting master, Chengqi's uncle Luo Ping, and a Sect Master advisor. Fair-play clues continue to point at Wen.
-- **Beats to consider:**
-  - The trio bound by heart-demon oaths, and the strain of keeping secrets.
-  - The Heavenly Ledger Pavilion: a trip there (inter-sect exchange or mission). Its archives reveal the old name for her gift: the Plum Blossom Shadow.
-  - Xie's offer: a letter or meeting inviting her to the Measure, with an honest case for their side.
-  - Suyin's family crisis back in Lianshui, and Wen helping her (deepening the betrayal to come).
-  - The Measure strikes an anchor at another sect. It works there.
-  - **End of arc:** Wen exposed. Suyin has to choose between her master and her friends. Meiying reaches Foundation Building.
-
-## Arc 3: Nine Anchors (rough)
-
-- Leaving the mountain. Tracing the Measure's anchors across the Eastern Reach and other sects.
-- Meiying's gift becomes known. Some sects want her and some want her dead; Yunxia Town and her family become a target.
-- Progression toward Core Formation. Her sight grows to perceive the Heavenly Lattice.
-- The Sect Master's silence becomes public; Jianyun faces a political crisis.
-
-## Arc 4 and beyond: The Measure of Heaven (rough)
-
-- The Heaven-Measuring Array nears completion. Xie and Meiying, two people who see the same broken world, choose different answers.
-- The truth of the Thinning (natural decline, or damage to the Lattice?).
-- Meiying's third way: re-weaving the veins instead of stealing them.
+**New clues planted in Arc 1** (for Arc 2):
+- Rou's Qi has one held place (Ch 8).
+- The father's line about Fang being "a careful man" (Ch 9).
+- The watcher's quiet, "finished" Qi (Ch 12).
+- Shen Wuque's Qi cannot be read at all (Ch 14).
+- The unreadable figure at the climax, who also announces nothing (Ch 18 to 19).
+- The seal on the gate posting order (Ch 20).
+- Yun Baihe's amused cameo (Ch 14).
+- The Bond cultivator in green with the light-absorbing beast (Ch 3) is left alone in Arc 1; one line in Ch 16 (Suyin checks her notes) keeps it alive for Arc 2.
 
 ---
 
-## Open decisions for the author
+## Setups and payoffs to keep alive
 
-1. **The Fang twist.** The elder at the meeting is Fang himself (the victim was the good guy). Recommended. Alternative: the meeting elder is a living traitor, such as Wen, and Fang was killed for finding out.
-2. **Second traitor.** Elder Wen (recommended: big emotional payoff through Suyin). Alternatives: the Sect Master himself, or Chengqi's uncle Luo Ping.
-3. **Romance.** (a) None, with a found-family focus; (b) slow burn with Chengqi, nothing before Arc 2; (c) rival-to-ally slow burn with Han Zhuo; (d) decide later. Recommendation: (a) or (b), with no romance in Arc 1. Never Xie.
-4. **Climax cost.** Should Meiying's eye carry a permanent mark after Ch 19, such as a pale ring in her left iris? Recommended: it makes the cost visible and gives others a way to recognise her later.
-5. **Realm names.** Familiar ones (Qi Gathering, Foundation Building, Core Formation...) so readers understand them immediately (recommended), or custom names tied to the Sword-Cloud theme.
+- **The tenth aspect.** Plant only the absence: Shen Qiuyue says in Ch 17 she will teach the first three aspects and cannot guess at the rest. Meiying does not learn Chu Linfeng's line in Arc 1. The father's promise in Ch 20 ("when you reach Foundation Establishment") is the pointer.
+- **The Burden question.** Her answer starts in Ch 10 (her friends). Chengqi still wants one and sees what it costs (Ch 12 to 14). Arc 1 ends with the offer in Fang's letter, not a decision [N3].
+- **Wanru.** Named as a sister in Ch 9; keeps vigil in Ch 10; one cryptic push in Ch 14. Her real aim stays open.
+- **Han Jingwei, Wen Jiabao.** One real beat each in Ch 11. Han stays cold; Wen Jiabao is shown as decent.
+- **Succession.** Planted at the Ch 9 dinner, Ch 14 (Yun Baihe) and Ch 20 (Pei Lingzhu watching). Not resolved.
+- **Why the post is vacant.** The appointment is the clock from Ch 15 to 19, and its result belongs to Arc 2.
+
+---
+
+## Dependency map
+
+Which beats move if the author decides differently.
+
+| Question | Beats that depend on it | If the author chooses otherwise |
+|---|---|---|
+| **Q1** Fang's death (plan: B, murder through the rules) | Ch 13, 15, 18, 19 | *A (accident):* Ch 18 to 19 become a rescue with no second hand. *C (disguised killing):* the climax's "listening is the weapon" is replaced by a plain fight and the Burden rules do less work. |
+| **Q2** Fang's Burden (plan: A, custodian of a sealed thing; Iron Sash knew) | Ch 8 (hint), 11 (bundle), 12, 13, 15 | *B (protect a person):* the niche holds a person's belongings or a message, not the token. *C (internal seal):* drop the token; the "missing item" clock becomes a missing key. |
+| **Q3** The letter (plan: B, Iron Sash intelligence) | Ch 8, 15, 20 | *A:* the courier is a carrier only. *C:* the leak is fully inside the Iron Sash from Ch 1. |
+| **Q4** The elder (plan: A, a real elder away six years) | Ch 13, 14, 16 | *B (impostor):* Ch 14's flip becomes "he is not where his roll says, because the roll is lying". *C (Yun Baihe):* replace Ch 14 with an open confrontation and lose Chengqi's slow dread. |
+| **Q5** The emblem (plan: C, highland power with a hidden-path tradition) | Ch 7, 12, 15, 18, 19 | *A (political only):* the seal and the "binding" silence go; the silence becomes a technique and the climax loses its Burden twist. *B (hidden path only):* keep the ritual space and drop the two-part token. |
+| **Q6** Her perception (plan: A, grows from the Honest Blade) | Ch 8, 10, 12, 13, 18, 19 | *B (second affinity)* or *C (channel)*: keep the beats, change only what the narration says is the cause. |
+| **Q12** Surnames | Ch 12 ("Cailan"), 14 to 15 | If Fang Ruochen is not a relative, he keeps the proxy role without the family angle. |
+| **Q8** Timeline | Ch 12 to 13 line on the day Fang died | Costs one sentence. |
+| **Q14** What Qi Gathering changes | Ch 10, 11 | Plan assumes only: Qi sense at a distance, more output, harder restraint. Anything beyond that must come from the author. |
+
+**Chapters 7 to 10 in short.** Ch 7 leans on Q5 (with a fallback). Ch 8 leans on nothing fixed (Rou stays ambiguous). Ch 9 and Ch 10 are independent. Writing can start at Ch 7.
+
+---
+
+## New questions for the author (raised by this outline, not in the bible)
+
+- **N1.** Does Chu Wulong know about the sect's old arrangement with the eastern highlanders? Plan: he knows it exists but not that it was being run off-schedule.
+- **N2.** Who is the second hand? Arc 1 does not say. Pick before Arc 2.
+- **N3.** Should Fang's posthumous letter to Meiying contain a **Burden offer** (the custodian's post, or a smaller version of it)? Plan: the letter asks her the Burden question; the offer is explicit in Arc 2.
+- **N4.** (Overlaps bible Q14.) What does Qi Gathering give her? The plan gives only Qi sense at a distance, more output and a harder restraint problem.
+- **N5.** (Overlaps bible Conflict 4.) Does the Whispering Edge fully unlock at the end of Arc 1, or is it only glimpsed? **Recommendation: glimpse only,** with the unlock in Arc 2, so it stays consistent with "aspects must be grown into".
+- **N6.** Should Suyin's sister become a character? Plan: she stays offstage in Arc 1, but the seal text may come from her papers.
+- **N7.** What is Wanru's real aim? Plan: protective, with her own agenda, unresolved in Arc 1.
+
+---
+
+## Arc 2 (rough): The Whispering Edge (about Chapters 21 to 40)
+
+- **Question:** Who is the second hand and what do they want from the sect's secret?
+- **Opening:** consequences of the hollow, the appointment of Fang's replacement, and Fang's letter.
+- **Meiying:** Qi Gathering to Mid; the Whispering Edge fully unlocked; Returning Bloom; her first Burden decision (what she carries and for whom). Likely a Burden of her own choosing, which pays off Ch 2 and Ch 10.
+- **Set piece:** an inter-branch tournament (Dragon Crown's field) in which the second hand moves, giving Han Jingwei and Wen Jiabao real stakes.
+- **Politics:** Zhao Jinfeng's swing vote, Pei Lingzhu and Shen Wuque's hidden path, and Yun Baihe's true allegiance.
+- **Family:** the father tells her part of what he has withheld.
+- **Open:** Shen Cailan's refused answer about Core Formation and above.
+
+## Arc 3 (rough): The Eastern Road (about Chapters 41 to 65)
+
+The two-month journey to the eastern highlands with the trio (and possibly a Still Blade escort), because the premise is a mystery *and an adventure*. The highlanders' side of the 112-year story, the people behind the emblem, and a first look at the wider world (rival sects, volume V material). Meiying reaches Foundation Establishment; the father's promised talk about her constellation comes due.
+
+## Later arcs (very rough)
+
+The second half of the Ten Legendary Swords (the Wandering Point to the Sovereign Cut), the succession fight, and the tenth aspect. The Plum Blossom Shadow stays unexplained until the author decides what it is.
