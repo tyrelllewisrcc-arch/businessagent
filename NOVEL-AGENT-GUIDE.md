@@ -90,17 +90,21 @@ Each agent's instructions are plain text files in `.claude/agents/`:
 
 The producer's playbook (the order the team works in) is in `CLAUDE.md`.
 
-| File | Agent |
-|---|---|
-| `lead-writer.md` | Lead writer |
-| `story-researcher.md` | Researcher |
-| `plot-planner.md` | Plot planner |
-| `continuity-checker.md` | Continuity checker |
-| `novel-editor.md` | Editor |
-| `lore-keeper.md` | Lore keeper |
+| File | Agent | AI model |
+|---|---|---|
+| `lead-writer.md` | Lead writer | Same as your session (the strongest available) |
+| `story-researcher.md` | Researcher | Sonnet |
+| `plot-planner.md` | Plot planner | Sonnet |
+| `continuity-checker.md` | Continuity checker | Sonnet |
+| `novel-editor.md` | Editor | Sonnet |
+| `lore-keeper.md` | Lore keeper | Sonnet |
+
+The lead writer gets the strongest model because it writes the actual prose. The assistants use Sonnet, a faster and cheaper model that handles planning, research and checking well. Each agent's model is set on the `model:` line at the top of its file. The options are `opus` (strongest), `sonnet` (middle) and `haiku` (fastest and cheapest).
 
 You can edit them, or ask Claude to, for example:
 
 > Update the lead writer so chapters are 4,000 words and written in first person.
 >
 > Add a new assistant that writes the author's notes at the end of each chapter.
+>
+> Switch the lore keeper to haiku.
