@@ -186,6 +186,7 @@ The sect's founding bloodline and its most visible fault line: a distant, formal
 - **What he knows (Hidden; LW):**
   - He knows the Accord of the Closed Figure exists; every Sect Head is told on taking office. He and Rou Shenglan chose Elder Fang as custodian together.
   - The Iron Sash disciples Meiying watched go into his chambers in Ch 5 were reporting Fang's death to him. From that morning he knows the sect's half of the seal is missing. He and Rou are hunting it quietly.
+  - He knew of the hollow meeting: on Day −5 Rou sent him the same warning she sent Fang (the envoy had come early and Mo had gone to meet him). Meiying's Ch 5 belief that the meeting was hidden from him is wrong.
   - He does **not** know his daughter saw the meeting in the hollow, or that Lifen's seal was used.
 - **Why he named her Meiying, and what he has not told her (Hidden; LW):** On becoming Sect Head he read Chu Linfeng's sealed record, kept in the Sect Head's own archive, which names the tenth aspect of the Ten Legendary Swords: the Plum Blossom Shadow. Seven years later he gave the name to his fifth child as a private hope he has never confessed. When she actually awakened to the Ten Legendary Swords, the hope turned into fear. The same record says Chu Linfeng did not believe the last aspects could be reached by someone who carries nothing, and Chu Linfeng died at 41 when a Burden broke. Her father's "strength comes from the self" is partly an attempt to keep her away from that cost. Her mother knows why she was named; Meiying does not.
 
@@ -240,7 +241,7 @@ If Chu Wulong dies or steps down without naming a successor, the position does *
 - **Branch and realm (LW):** Iron Vow by constellation (Crescent Blade), Foundation Establishment, Late. As an **instruction elder** he gave up his branch council seat (see Robes and rank), which is why Chengqi says he "wasn't a branch elder" (Ch 5).
 - Socratic. Creates space rather than filling it. Does not praise; says "Correct" and moves on. Infinite patience for students who struggle while trying, none for those who do not try. Treats Meiying exactly like everyone else, which she considers his highest compliment (Ch 1, Vol III, Vol IV).
 - Not warm. Correct, professional, and occasionally said things that mattered without acknowledging it (Ch 5).
-- **Ch 1:** His left sleeve was cut short in a hurry that morning. A senior Iron Sash courier carried a sealed letter case toward his classroom before second class. He watched the Wen Jiahao spar from the doorway and ended it ("That is sufficient").
+- **Ch 1:** His left sleeve was cut short in a hurry that morning, a dark mark still along the cut edge (Meiying notices it; it is the seal's ink, see the Accord). A senior Iron Sash courier carried a sealed letter case toward his classroom before second class. He watched the Wen Jiahao spar from the doorway and ended it ("That is sufficient").
 - **Death (Ch 5, Notes 5):** Found dead at his desk in his own room in the instruction hall residential quarters, by household staff at first light. The Iron Sash physician's finding: **Qi implosion**, the internal circuit collapsed inward; not a technique failure, not an attack; consistent with **Burden backlash**. He carried a significant, "load-bearing" Burden that was not publicly known. The Iron Sash is investigating. **He died during the night before he was found** (LW; Ch 6 now says "passed the night before last").
 - **Ch 6:** Officially announced mid-class: "Elder Fang passed the night before last." His position will be filled permanently within the month; his classes are suspended until then. No cause of death was given publicly.
 - Chengqi's read: he was not a branch elder, not Iron Sash, not anyone with obvious political weight, "but he knew something" (Ch 5).
@@ -347,7 +348,8 @@ Day count: the morning Fang's body was found (Ch 5) is **Day 0**.
 - **Night of Day −1.** Shen Wuque takes the half from the niche and carries it past the boundary stones. Fang's condition breaks. He dies at his desk.
 - **Day 0 (Ch 5).** Found at first light. The Iron Sash reports to Chu Wulong.
 - **Day 1 (Ch 6).** The death is announced in combat class.
-- The letter did **not** break the condition. Meiying's reasoning that "the backlash would have been immediate" (Ch 5) is wrong, and that mistake is a fair-play clue.
+- The letter did **not** break the condition. Meiying's reasoning that "the backlash would have been immediate" (Ch 5) is wrong, and that mistake is a fair-play clue. She notices the gap on the page ("The letter was five days old, and he had been found this morning") and sets the misfit aside to look at later, so the reader has the clue too.
+- **Chu Wulong knew the envoy had come early (LW).** On Day −5 Rou Shenglan sent him the same warning she sent Fang. He knew Mo was meeting Hesu; what he did not know until Day 0 was that the half had been moved and taken. Meiying's belief that the meeting happened "without the sect head's knowledge" (Ch 5) is her inference and is wrong.
 - The **appointment** to Fang's post falls about Day 21 ("within the month", Ch 6). The **renewal** is due at the new moon, about Day 15.
 
 ### Sect history (LW)
@@ -399,7 +401,7 @@ Day count: the morning Fang's body was found (Ch 5) is **Day 0**.
   - **The instruction hall residential quarters** (where Elder Fang lived and died) (Ch 5).
   - **The Iron Vow residential building** (Suyin's room) (Ch 5).
 - **The Chu family residence** (Ch 4, Ch 5):
-  - **The family training courtyard:** plum trees along a colonnade (in full pale-pink bloom in Ch 4, mostly shed by Ch 5), a carved mandala at the centre of the stone floor, a weapon rack, the gold-roofed family hall at the far end with the mountain and a waterfall above its roofline; an upper colonnade overlooks it.
+  - **The family training courtyard:** plum trees along a colonnade (in full pale-pink bloom in Ch 4, past peak that evening, beginning to shed by Ch 5), a carved mandala at the centre of the stone floor, a weapon rack, the gold-roofed family hall at the far end with the mountain and a waterfall above its roofline; an upper colonnade overlooks it.
   - **The indoor training hall:** high timber ceiling, latticed windows, tatami floor, cedar and old lacquer smell, three calligraphy banners, weapon racks on the north wall. Where Meiying thinks.
   - **The covered walkway** with latticed screens along the eastern face, connecting to her father's working chambers.
   - **The family archive:** run by Fang Ruochen; includes the outer territories section (diplomatic correspondence, trade records, delegations across six centuries) and a political section at the back.
@@ -413,6 +415,7 @@ Day count: the morning Fang's body was found (Ch 5) is **Day 0**.
 ### Daily life and everyday detail
 - **Season (LW):** the story opens at the end of winter, as the plum trees bloom. Cold mornings, mist, early spring rain to come.
 - **Classes:** Body Tempering students take theory and technique (Elder Fang), Applied Theory of Burdens and Conditional Qi (moved this term from its usual third-year slot; this class mixes branches and levels, including some Qi Gathering students), and combat instruction (Elder Deng Suhua). Afternoon training periods are optional at their level (Ch 1, Ch 2, Ch 3, Ch 6).
+- **Class days (LW):** the term began on Day −5 (Ch 1). Shared classes meet on alternate days (Day −5, −3, −1, 1, and so on); the days between are free for training, study and branch duties, which is why Ch 4 (Day −2) and Ch 5 (Day 0, "No classes today") have none. Not every class meets every class day: Elder Deng Suhua's combat class held its first session of the term on Day 1 (Ch 6 epigraph, "first session").
 - **Herbs:** Qīnglù grass: Qi-stabilisation tonics; use the leaves nearest the root; a darker stem means longer growth. Silverthread vine: smells of clean linen and cold water; small white-silver flowers at the tips; harvest with the root intact (Ch 3). Tonics help Qi Gathering cultivators consolidate a stage (LW).
 - **Affinity stones:** fist-sized stones that glow in shifting pale colours by the user's affinity. Inaccurate below Foundation Establishment; mostly decorative. A merchant charges eight copper a reading (Ch 3).
 - **Money (LW):** copper cash for everyday buying (Ch 3); silver taels for larger sums (one tael is a thousand copper); gold is rare. **Marrow jade**, small stones dense with Qi, is the currency of cultivation: used in breakthroughs and formations, and expensive (a thumb-sized piece costs several taels). Disciples earn **merit** in their branch ledger for duties and contracts, spent on tonics, marrow jade, manual access and training-room time. Merit is never shown as a number on the page.
@@ -549,7 +552,7 @@ Above Mastered is an unnamed fifth state where the distinction between forms dis
 | 7 | **The Mirrored Form** | Illusion through Qi. False blade images to misdirect; very hard to counter without Hollow training. |
 | 8 | **The Sovereign Cut** | Weight and authority. Strikes carry suppressive Qi that staggers even stronger opponents. |
 | 9 | **The Broken Oath** | Last resort. Sacrifices all defensive Qi for one absolute strike; cannot be blocked; cannot be repeated quickly. |
-| 10 | **The Plum Blossom Shadow** | Her completed form. Unknown. No description in any manual. Unlocks only at peak mastery. Named after her. The only record is Chu Linfeng's line: *"It is not a technique. It is what you become when you have mastered all nine and survived the cost of doing so."* |
+| 10 | **The Plum Blossom Shadow** | Her completed form. Unknown. No description in any manual. Unlocks only at peak mastery. Shares her name: she was named for it (Q9). The only record is Chu Linfeng's line: *"It is not a technique. It is what you become when you have mastered all nine and survived the cost of doing so."* |
 
 The author marks aspects 2 to 9 as a provisional overview, "to be developed as the story requires" (Vol IV).
 
@@ -685,7 +688,7 @@ The chapter log is the official tracker for current numbers; this is the summary
 ## Plot threads and secrets
 
 ### Secrets (readers do not know yet; Meiying does not know)
-1. **The tenth aspect is named after her.** She does not know (Vol IV). She also does not know Chu Linfeng's line exists, or that no manual describes the tenth aspect (Vol I, Vol II). Her father named her for it (LW).
+1. **The tenth aspect shares her name; she was named for it.** She does not know (Vol IV). She also does not know Chu Linfeng's line exists, or that no manual describes the tenth aspect (Vol I, Vol II). Her father named her for it (LW).
 2. **Her father has not told her everything about her constellation**, and has never told her why he watches her most closely (Vol I, Vol II). What he is hiding: the name, Chu Linfeng's record, and his fear of the cost (LW).
 3. **The Still Blade branch has been waiting nineteen years for exactly her.** Shen Qiuyue will teach her the first three aspects and nothing beyond, because nobody knows the rest (Vol II).
 4. **Shen Wuque is not truly a Quenching Fan practitioner.** Pei Lingzhu knows and is hiding it from the sect (Vol II). He is the second hand (LW).
@@ -707,7 +710,7 @@ The plot planner sets exact chapters; these are the boundaries.
 - **Arc 3 and later:** Qiongling's side; what the sect gave 112 years ago; why the breakaway house wants the Accord broken; the name of the tenth aspect and Chu Linfeng's record (by the time she reaches Foundation Establishment).
 
 ### Open threads on the page (as of Chapter 6)
-- **The meeting in the hollow:** a Shifting Wind elder and an eastern highland outsider inside a silence domain; apparently the first contact in 112 years, apparently without the sect head's knowledge (Ch 3, Ch 4, Ch 5).
+- **The meeting in the hollow:** a Shifting Wind elder and an eastern highland outsider inside a silence domain; apparently the first contact in 112 years, apparently without the sect head's knowledge (Ch 3, Ch 4, Ch 5; both are Meiying's inferences and both are wrong, see the Accord). The 80-year margin drawing she found is drawn with one side left open, unlike the closed emblem at the outsider's collar (Ch 4).
 - **The emblem:** interlocking angular lines forming a closed, deliberate geometric shape, worn at the outsider's collar; eastern highland visual style. Suyin has "found something" and will confirm it "tonight" (Ch 3, Ch 4, Ch 6). The Iron Sash catalogue of external symbols is the obvious source, but approaching them would be visible.
 - **Elder Fang's letter:** sealed, urgent, delivered by a senior Iron Sash courier before second class on the day of Ch 1. Sender and contents unknown to Meiying (Ch 1, Vol IV).
 - **Elder Fang's death:** Qi implosion consistent with backlash from a secret, load-bearing Burden. What he was bound to and what broke are unknown. Was his Burden in the Iron Sash records? (Ch 5.) Meiying sees "a meeting, a letter, a death" as a sequence, not a coincidence.

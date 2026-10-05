@@ -20,7 +20,7 @@ Elder Fang was in the middle of explaining why most people died badly when Meiyi
 
 Suyin did not look up from her notes. "So?"
 
-"So he cut it himself. Which means he did it in a hurry. Which means something happened this morning that he was not expecting." Meiying tilted her head slightly, watching the elder move between the rows of low desks. "My guess is a letter from outside the sect. He gets that expression when the outside world reminds him it exists."
+"So he cut it himself. Badly. There's a dark mark along the edge he didn't quite get. Which means he did it in a hurry. Which means something happened this morning that he was not expecting." Meiying tilted her head slightly, watching the elder move between the rows of low desks. "My guess is news from outside the sect. He gets that expression when the outside world reminds him it exists."
 
 "That expression being—"
 
@@ -40,7 +40,7 @@ On Meiying's other side, Luo Chengqi was drawing a diagram that had started as a
 
 The hall was old in the way that things in the Jianyun Sect tended to be old — not crumbling, but settled. The wood of the desks had darkened over decades of use. The practice marks on the floor near the front were worn smooth, generations of Body Tempering students standing in the same spots, making the same first attempts at something that would eventually feel natural. Morning light came through narrow windows on the east wall and landed in the same places it had landed for a very long time.
 
-There were twenty-two students in the room. Meiying knew all of them by name and most of them by something more specific — the Binding Sash girl in the third row who gripped her brush too hard when she was nervous, the Iron Vow boy near the window who was good at theory and knew it and was currently watching the room with the quiet attention of someone taking careful inventory, the cluster of Flame Herald disciples in the back left corner who sat together out of habit and took up slightly more space than necessary.
+There were twenty-two students in the room. Meiying knew most of them by name and many of them by something more specific — the Binding Sash girl in the third row who gripped her brush too hard when she was nervous, the Iron Vow boy near the window who was good at theory and knew it and was currently watching the room with the quiet attention of someone taking careful inventory, the cluster of Flame Herald disciples in the back left corner who sat together out of habit and took up slightly more space than necessary.
 
 One of them she had noticed from the moment she walked in.
 

@@ -26,7 +26,7 @@ She went to the outer territories section — diplomatic correspondence, trade r
 
 She read quickly. This was how she had always read — grasping the framework of a document before its detail, understanding the relationship between two records before fully processing either individually. She sometimes reached correct conclusions through routes that would confuse a more methodical reader, and occasionally missed a specific detail while getting the structure exactly right. Fang Ruochen had noted this once, unprompted, three years ago: you read like someone building a map before they have all the roads. She had thought about it for a week.
 
-The eastern highland records were sparse — a region quiet for over a century generates little correspondence. What she found was enough. A trade delegation record from forty years ago referencing geometric insignia in an eastern highland style. A territorial notation from eighty years back with a margin drawing — angular, closed, interlocking — that matched the visual language of what she had seen. A diplomatic record from one hundred and twelve years ago — the last formal contact between the Jianyun Sect and any eastern highland faction. Three lines. A meeting requested and never granted.
+The eastern highland records were sparse — a region quiet for over a century generates little correspondence. What she found was enough. A trade delegation record from forty years ago referencing geometric insignia in an eastern highland style. A territorial notation from eighty years back with a margin drawing — angular, interlocking, one side left open — that matched the visual language of what she had seen. A diplomatic record from one hundred and twelve years ago — the last formal contact between the Jianyun Sect and any eastern highland faction. Three lines. A meeting requested and never granted.
 
 She sat with this. Not a name. Not a faction. A geography — a region two months' travel distant, politically isolated, no active contact in over a century. Whatever meeting she had stumbled onto in the hollow was not the resumption of something ongoing. It was the beginning of something that had not existed in living memory.
 
@@ -54,7 +54,7 @@ Wanru stood at the colonnade entrance in ink-black robes with broad storm-blue t
 
 Meiying lowered the jian. "I'm running it solo."
 
-"I know." She crossed to the weapon rack and selected a practice staff with the offhand assessment of someone for whom the specific weapon mattered less than what she did with it. "Again."
+"I know." She stepped out of her shoes, crossed to the weapon rack and selected a practice staff with the offhand assessment of someone for whom the specific weapon mattered less than what she did with it. "Again."
 
 Meiying knew this was not what it appeared to be. She ran the second form.
 

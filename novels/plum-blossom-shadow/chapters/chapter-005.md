@@ -60,11 +60,13 @@ The timing sat in her chest like a stone dropped into still water, still sinking
 
 ―――
 
-She walked the long way — through the outer courtyard, past the plum blossom trees that had shed most of their petals now, the branches bare-tipped against the morning sky. Around the perimeter of the family compound where no one would intercept her with a question she was not ready to answer.
+She walked the long way — through the outer courtyard, past the plum blossom trees that had begun to shed, the stone beneath them pale with what the night wind had taken. Around the perimeter of the family compound where no one would intercept her with a question she was not ready to answer.
 
 Burden backlash required a broken condition. Something Elder Fang had agreed to maintain — a protection, a secret, a duty — had failed or been destroyed. The backlash had killed him, which meant the Burden was not minor. You did not die from a small oath breaking. You died from something load-bearing.
 
 The letter had arrived the morning of the spar — the Iron Sash courier with the sealed case, moving toward Elder Fang's classroom before second class. The Iron Sash handled intelligence. If the letter had told him something had changed — something that broke his condition before he could act on it — the backlash would have been immediate.
+
+It had not been. The letter was five days old, and he had been found this morning. She noted the misfit, did not like it, and set it aside to look at later.
 
 She stopped walking. Looked up at the mountain above the compound wall, the mist at its lower face, the waterfalls white in the distance.
 
