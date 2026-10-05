@@ -88,7 +88,7 @@ Meiying crossed the room in four steps and made the choice at the sill. The forw
 
 A quarter-breath, under pressure, for the first time. It held. She went out after him.
 
-*One.* She counted the way she counted in the hall, a sequence's worth of full-pressure work at a time, because counting was how she kept herself honest about what she had left.
+She counted the way she counted in the hall, a sequence's worth of full-pressure work at a time, because counting was how she kept herself honest about what she had left.
 
 The tiles were treacherous. She ran on the ridge where the clay was dry and let him take the slope. He ran like someone who had been frightened for days and had only now been allowed to do something about it. In the last of the light she could see a faint waver at the backs of his knees, like heat over stone: Qi driven hard into the legs. Body Tempering, Late, at a guess. A stage below hers. The legs were his.
 
@@ -96,25 +96,25 @@ At the end of the wing the roof split. Left, an upward scramble to the main roof
 
 She jumped after him and landed on one of them.
 
-It skated out from under her heel. She went down hard on one knee at the storehouse gutter, and for a moment there was nothing under her left hand but a storey of dark air and the lane below. She got her weight back over the tiles. *Two*, and part of it spent on not falling.
+It skated out from under her heel. She went down hard on one knee at the storehouse gutter, and for a moment there was nothing under her left hand but a storey of dark air and the lane below. She got her weight back over the tiles. *One*, and the end of it spent on not falling.
 
 The window frame creaked behind her, but the footsteps that came after were not on the tiles at her back. They were above her and to the left. Chengqi had gone up onto the main roof, the line every Shifting Wind student used to skip the stair queues at mealtimes. He was running parallel, higher, and faster for it.
 
-Halfway along the storehouse a squat vent hood stood up out of the roof. The runner went right around it.
+Halfway along the storehouse a squat vent hood stood up out of the roof. The runner went right around it. *Two.*
 
 Right, and right again. Frightened people ran for what they knew and took the nearest way out every time. She knew what waited at the end of this roof; she had walked the lane beneath it often enough. To the right, a short drop onto a stacked woodpile: the low route, the one you used if you used these roofs at all. To the left, a steep stone service stair.
 
 "Chengqi!" she called up. "The woodpile!"
 
-She moved onto the runner's left as she ran, so that the stair side of the roof was hers and the only open line was the one he wanted anyway.
+She kept to the ridge close behind him, crowding him, so that the only line he had time to think about was the one he wanted anyway.
 
 Chengqi came off the edge of the main roof ahead of them, dropped twice his own height onto the woodpile, landed on both feet with his arms out and his face entirely serious, and stood there.
 
-The runner stopped dead. His heels skidded on the wet tiles. For half a heartbeat he did not know what to do, and Meiying watched him not know it. Then he wrenched round, lost four paces turning, and took the stair.
+The runner stopped dead. His heels skidded on the wet tiles. For half a heartbeat he did not know what to do, and Meiying watched him not know it. Then he wrenched left, lost four paces turning, and took the stair.
 
 In the combat hall Chengqi had won by never being where his opponent expected. Tonight he had been where the runner was going, one breath before the runner got there.
 
-She took the stair three steps at a time. *Three.*
+She took the stair three steps at a time, and felt the third sequence nearing its end.
 
 Six steps between them. Four. She reached and caught his sleeve at the wrist: coarse cloth, rough-woven, no trim at the cuff. It smelled of fresh-cut timber, the sap still sticky.
 
@@ -150,7 +150,7 @@ He looked down at the lanterns. "That's not very much face."
 
 He opened his mouth, then closed it. "That's fair."
 
-Her palm was bleeding a little, and her forearm and shoulder had joined in. She went back over the chase the way she would go back over a spar. She had spent a whole sequence on a roof the forward pass could have crossed nearly as fast, and part of another on not falling, and when the moment came that speed actually decided, she had nothing left to decide it with. The channel was not something to run on. It was something to strike with. Next time she would cross the roofs on the old route and open the channel at the stair, and the quarter-breath meant she could.
+Her palm was bleeding a little, her knee had stiffened, and her forearm and shoulder had joined in. She went back over the chase the way she would go back over a spar. She had spent two whole sequences on roofs the forward pass could have crossed nearly as fast, part of one of them on not falling, and when the moment came that speed actually decided, she had nothing left to decide it with. The channel was not something to run on. It was something to strike with. Next time she would cross the roofs on the old route and open the channel at the stair, and the quarter-breath meant she could.
 
 ―――
 
@@ -182,7 +182,7 @@ She took a wrapped bundle from the second shelf, marked in her neat hand *Millet
 
 "What was he after?" Chengqi asked.
 
-"What I wrote." She touched the front of her robe, where the small notebook lived. "I write things down. Someone knows that."
+"What I wrote." She touched the front of her robe, where the small notebook lived. "I write things down. Someone knows that. It's why the paper that matters lives on me."
 
 She latched the shutter before she unwrapped anything, and when she read, she read low, the way people read in an archive. Chengqi folded himself down against the wall.
 
@@ -302,6 +302,6 @@ He had come off that ridge without a sound. He could have dropped on the runner 
 
 So someone had wanted Suyin's room searched. Or had wanted to see what the three of them would do when it was.
 
-Meiying turned back toward the stair to tell Suyin to bar her window. At first light she would sit across from the woman who had given that order, and tell her half.
+Meiying turned back toward the stair to tell Suyin to bar her window, not latch it. At first light she would sit across from the woman who had given that order, and tell her half.
 
 *— End of Chapter Seven —*
