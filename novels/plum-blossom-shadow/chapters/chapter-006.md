@@ -34,7 +34,7 @@ A senior Iron Sash disciple — silver-grey trim, the bearing of an official err
 
 The room stopped. Thirty students in mid-drill, breathing, waiting.
 
-"Elder Fang passed two days ago." She said it the way she said everything — directly, without softening. "His position will be filled permanently within the month. His classes are suspended until then." She lowered her hand. "Resume."
+"Elder Fang passed the night before last." She said it the way she said everything — directly, without softening. "His position will be filled permanently within the month. His classes are suspended until then." She lowered her hand. "Resume."
 
 The drill resumed. The students absorbed the announcement in the middle of movement with nowhere to put it, which meant they carried it in their bodies through the rest of the warm-up. Meiying suspected this was not accidental. Elder Deng Suhua did not appear to be someone who did things accidentally.
 
@@ -64,13 +64,13 @@ They moved to the center of the floor.
 
 No warmth. No acknowledgment beyond the formal starting position — weapons raised, the appropriate distance between them, both of them still.
 
-Han Jingwei looked at her the way he looked at everything. Not hostility. Not dismissal. The specific quality of someone cataloguing a problem before they engage with it. He saw, she understood, the Sect Head's youngest daughter. A Still Blade practitioner who had beaten Wen Jiabao in a classroom spar two weeks ago. A girl whose constellation had not produced a true master in two generations.
+Han Jingwei looked at her the way he looked at everything. Not hostility. Not dismissal. The specific quality of someone cataloguing a problem before they engage with it. He saw, she understood, the Sect Head's youngest daughter. A Still Blade practitioner who had beaten Wen Jiahao in a classroom spar less than a week ago. A girl whose constellation had not produced a true master in two generations.
 
 That was what he saw. She let him see it.
 
 He moved first.
 
-Not Wen Jiabao's committed aggression and not Wanru's fluid dissolution. Han Jingwei's first strike was placed — a controlled diagonal cut with the practice dao that was testing range and response rather than trying to land. The Crescent Blade constellation in its natural expression: patience, sustained pressure, structural solidity. He was not trying to end the fight early. He was building a picture.
+Not Wen Jiahao's committed aggression and not Wanru's fluid dissolution. Han Jingwei's first strike was placed — a controlled diagonal cut with the practice dao that was testing range and response rather than trying to land. The Crescent Blade constellation in its natural expression: patience, sustained pressure, structural solidity. He was not trying to end the fight early. He was building a picture.
 
 She deflected with the flat of her jian and created distance. Read the speed of the dao, the arc of it, the weight behind it. Heavier than she was used to dealing with. The Crescent Blade's grinding style would be worse the longer the fight ran — that weight compounded over exchanges, each impact a fraction more taxing than the last.
 
@@ -92,7 +92,7 @@ She stopped retreating. Planted — not Rooted Shore, not formally, just the dec
 
 In that moment she activated Zhǐ Huā.
 
-Two strikes — his forearm, his shoulder, the pressure points she had been locating during the exchanges, finding his Qi pattern the way she had found Wen Jiabao's. The disruption was smaller than it had been against Wen Jiabao — Han Jingwei's Qi threshold was higher, his circuit more stable, the interference less catastrophic. But it registered. His next movement arrived fractionally wrong — not collapsed, just imprecise.
+Two strikes — his forearm, his shoulder, the pressure points she had been locating during the exchanges, finding his Qi pattern the way she had found Wen Jiahao's. The disruption was smaller than it had been against Wen Jiahao — Han Jingwei's Qi threshold was higher, his circuit more stable, the interference less catastrophic. But it registered. His next movement arrived fractionally wrong — not collapsed, just imprecise.
 
 She used the fraction.
 

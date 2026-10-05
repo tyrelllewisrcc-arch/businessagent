@@ -126,7 +126,7 @@ She turned. The Flame Herald boy was standing two rows away, hands loose at his 
 
 "That's me," she said.
 
-"Wen Jiabao. Flame Herald branch." He said it the way people say things they expect to land with weight. "I've heard things about you."
+"Wen Jiahao. Flame Herald branch." He said it the way people say things they expect to land with weight. "I've heard things about you."
 
 "Interesting things or boring things?"
 
@@ -150,19 +150,19 @@ He blinked. He had expected something else — defense, dismissal, a refusal. Wh
 
 From the doorway, Elder Fang did not leave. He leaned against the frame, arms folded, and said nothing. His expression was the one he wore when he had already decided to let something happen.
 
-The Iron Vow boy had not left either. He stood near the back wall with his arms crossed. He did not watch Wen Jiabao settle into his stance. He watched where Meiying's eyes went before she moved.
+The Iron Vow boy had not left either. He stood near the back wall with his arms crossed. He did not watch Wen Jiahao settle into his stance. He watched where Meiying's eyes went before she moved.
 
 ―――
 
 They moved the desks back. Not all of them — just enough to clear a space in the center of the hall roughly four paces across. Chengqi did most of the moving. Suyin sat on top of a desk at the edge and watched.
 
-Wen Jiabao rolled his shoulders once and settled into his stance — weight forward, hands raised, the classic Flame Herald opening that was less a guard and more a declaration of intent. He was not trying to look impressive. He simply was, in the way that people who have trained a particular thing long enough become the shape of it.
+Wen Jiahao rolled his shoulders once and settled into his stance — weight forward, hands raised, the classic Flame Herald opening that was less a guard and more a declaration of intent. He was not trying to look impressive. He simply was, in the way that people who have trained a particular thing long enough become the shape of it.
 
 Meiying stood across from him with her hands at her sides.
 
 He moved first.
 
-Flame Herald disciples were taught that hesitation was the first wound, and Wen Jiabao had learned the lesson thoroughly. He came across the distance in two steps, right hand driving forward in a straight punch layered with compressed Qi — not a full projection, just enough enhancement to turn a hard strike into something that would leave a mark. Fast. Committed. Exactly what she had expected from the moment he opened his mouth.
+Flame Herald disciples were taught that hesitation was the first wound, and Wen Jiahao had learned the lesson thoroughly. He came across the distance in two steps, right hand driving forward in a straight punch layered with compressed Qi — not a full projection, just enough enhancement to turn a hard strike into something that would leave a mark. Fast. Committed. Exactly what she had expected from the moment he opened his mouth.
 
 Meiying stepped inside it.
 
@@ -194,7 +194,7 @@ He infused his hands fully. The Qi gathering around his fists was visible — a 
 
 She moved.
 
-The room saw her close the distance and strike him once in the chest. That was all most of them caught — a blur of motion and then Wen Jiabao dropping straight down, knees first and then flat, like something that had simply stopped working all at once.
+The room saw her close the distance and strike him once in the chest. That was all most of them caught — a blur of motion and then Wen Jiahao going down, knees first and then flat.
 
 A fully enhanced cultivator was in some ways easier to read than a dormant one — the Qi announced where everything was. She found the convergence point at his sternum where his technique was drawing itself together and moved before he released it.
 
@@ -204,13 +204,13 @@ His own power turned inward. The palm strike drove it home. He went straight dow
 
 Chengqi said, very quietly, "Oh."
 
-Wen Jiabao pushed himself to one knee. His hands had gone dark — the orange heat faded, his Qi circuit trying to reassemble itself. He was not badly hurt. He was going to feel it for the rest of the day.
+Wen Jiahao pushed himself to one knee. His hands had gone dark — the orange heat faded, his Qi circuit trying to reassemble itself. He was not badly hurt. He was going to feel it for the rest of the day.
 
 "Yield," she said.
 
 He started to rise.
 
-"Wen Jiabao."
+"Wen Jiahao."
 
 Elder Fang's voice came from the doorway — unhurried, absolute, final.
 
@@ -218,7 +218,7 @@ Elder Fang's voice came from the doorway — unhurried, absolute, final.
 
 The last of the tension left the room like air through an opened door.
 
-Wen Jiabao's raised knee came back down. He stayed where he was for a moment. Then he said the word.
+Wen Jiahao's raised knee came back down. He stayed where he was for a moment. Then he said the word.
 
 "Yield."
 
@@ -238,7 +238,7 @@ He said nothing. His expression was not grateful and she had not expected it to 
 
 She left him standing in the cleared space and did not look back.
 
-Near the back wall, the Iron Vow boy uncrossed his arms. He looked at the space where she had been standing, then at Wen Jiabao still steadying himself. Then he walked out through the other door without a word to anyone.
+Near the back wall, the Iron Vow boy uncrossed his arms. He looked at the space where she had been standing, then at Wen Jiahao still steadying himself. Then he walked out through the other door without a word to anyone.
 
 He had seen everything.
 

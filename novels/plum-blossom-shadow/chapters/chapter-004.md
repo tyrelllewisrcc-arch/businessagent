@@ -44,7 +44,7 @@ The Chu family training courtyard was at its best in the late morning — the pl
 
 She stood at the center of the mandala with her jian — the one fitted to her reach at age ten, the grip worn to the shape of her hand. She began with the first form. Zhǐ Huā, Guiding Bloom. Mastered. It moved through her without requiring thought and she set it aside the way you set aside something you already know and ran the second.
 
-Fēn Lú — Parting Reed. She had been working this form for weeks. The difficulty of training it alone was the absence of a real committed motion to enter — the form required reading an opponent's overextension and driving into the gap. She worked from memory: Wen Jiabao's shoulder drop, the forward drive, the gap it created. Better than last week. Not reliable.
+Fēn Lú — Parting Reed. She had been working this form for weeks. The difficulty of training it alone was the absence of a real committed motion to enter — the form required reading an opponent's overextension and driving into the gap. She worked from memory: Wen Jiahao's shoulder drop, the forward drive, the gap it created. Better than last week. Not reliable.
 
 She was running it again when she became aware she was not alone.
 

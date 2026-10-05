@@ -64,7 +64,7 @@ She walked the long way — through the outer courtyard, past the plum blossom t
 
 Burden backlash required a broken condition. Something Elder Fang had agreed to maintain — a protection, a secret, a duty — had failed or been destroyed. The backlash had killed him, which meant the Burden was not minor. You did not die from a small oath breaking. You died from something load-bearing.
 
-The letter had arrived the morning of Chapter One's events — the Iron Sash courier with the sealed case, moving toward Elder Fang's classroom before second class. The Iron Sash handled intelligence. If the letter had told him something had changed — something that broke his condition before he could act on it — the backlash would have been immediate.
+The letter had arrived the morning of the spar — the Iron Sash courier with the sealed case, moving toward Elder Fang's classroom before second class. The Iron Sash handled intelligence. If the letter had told him something had changed — something that broke his condition before he could act on it — the backlash would have been immediate.
 
 She stopped walking. Looked up at the mountain above the compound wall, the mist at its lower face, the waterfalls white in the distance.
 
