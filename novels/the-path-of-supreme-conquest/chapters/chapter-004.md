@@ -24,7 +24,7 @@ Jian waited for the rest, the clause where Rui explained how little it would cos
 
 Rui flinched. It was small, a tightening at the corner of his mouth, and Jian was ashamed of how much he had wanted to see it.
 
-“It costs me the intake,” Rui said. “I’m nineteen before the next one. Same as you.” He drew a breath through his nose. “You said it to the council and I sat there counting the dates. If it were my name on the slip, I’d say it wasn’t fair either.”
+“It costs me the intake,” Rui said. “I’m twenty before the next one, and you’re nineteen.” He drew a breath through his nose. “You said it to the council and I sat there counting the dates. If it were my name on the slip, I’d say it wasn’t fair either.”
 
 “If this is pity…”
 
@@ -74,7 +74,7 @@ Qiao turned a page. “He is Seventh Layer at eighteen, and his roots test above
 
 “Yes, Patriarch.”
 
-“You will be nineteen before the next selection.”
+“You will be twenty before the next selection.”
 
 “Yes.”
 

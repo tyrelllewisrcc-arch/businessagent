@@ -110,7 +110,7 @@ The pen paused. “Han. Main house?”
 
 “Write Han.”
 
-The pen moved. Jian, two places behind, saw the blue tag on Han Zhen’s wrist. Sixth or Seventh, a layer either side of Rui. He saw something else too. Han Zhen shifted the pack to settle its weight and did not glance around to see who had watched him send his servant home.
+The pen moved. Jian, two places behind, saw the blue tag on Han Zhen’s wrist. Sixth or Seventh, the same band as Rui. He saw something else too. Han Zhen shifted the pack to settle its weight and did not glance around to see who had watched him send his servant home.
 
 Han Zhen wore a fortune in spirit-iron and carried his own pack. The second fact irritated Jian more than the first.
 
@@ -122,7 +122,7 @@ At the quartermaster’s window the clerk reached Jian’s place and ran out of 
 
 Two paces off, Han Zhen sat on a barrel lacing his new boots. Kaiyuan stood at Jian’s elbow. Wen hovered behind Kaiyuan with his bundle clutched to his chest.
 
-Jian had slept two hours since midnight. His thigh throbbed in time with the sutlers’ hammers.
+Jian had not slept since the night before. His thigh throbbed in time with the sutlers’ hammers.
 
 The clerk read from his list. “Size nine. Shen Jian, Shen Clan. Wait for the second delivery.”
 
@@ -138,7 +138,7 @@ Kaiyuan murmured at Jian’s elbow. “Leave it.”
 
 “Mine didn’t get to.”
 
-The yard’s noise thinned. Jian counted the cost in the time his arm took to travel. The army would write his name down for what he did next. He had slept two hours. He had a leg like a hot wire. He understood each part of it, and he hit the man anyway.
+The yard’s noise thinned. Jian counted the cost in the time his arm took to travel. The army would write his name down for what he did next. He had not slept. He had a leg like a hot wire. He understood each part of it, and he hit the man anyway.
 
 The blow landed on the conscript’s jaw. The man dropped across a coil of rope, and his friends came over him in a rush. Kaiyuan seized Jian’s belt and hauled him sideways, and the nearest friend, lunging after, crashed into the man seated on the barrel. Han Zhen came up with a fistful of the stranger’s collar. The stranger, seeing plated armor and a raised hand, swung.
 
